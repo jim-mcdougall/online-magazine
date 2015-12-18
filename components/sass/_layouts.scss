@@ -1,0 +1,85 @@
+@import "susy"; 
+
+$susy: (
+  container: 1140px, 
+  columns: 12, 
+  gutters: 0.4, 
+  global-box-sizing: border-box, 
+  // debug: (image: show-columns)
+  );
+
+@include border-box-sizing;
+
+.wrap {
+  @include container;
+}
+
+// Masonry Layout
+// --------------
+
+// Sets masonry column size
+.masonry__column {
+  width: span(4);
+}
+
+// Sets masonry gutter size
+.masonry__gutter {
+  width: gutter();
+}
+
+.masonry__item {
+  // Masonry item with. This is required to determine individual item width
+  width: span(4);
+  margin-top: gutter();
+}
+
+.masonry__item.one-up { 
+	width: span(4);
+	height: 300px;
+	background-color: #ffffff;
+}
+
+.masonry__item.two-up { 
+	width: span(8);
+	height: 300px;
+	background-color: #ffffff;
+
+}
+
+.masonry__item.two-up-dbl { 
+	width: span(8);
+	height: 600px;
+	background-color: #ffffff;
+}
+
+
+
+
+
+// .oneup{
+// 		height: 300px;
+// 		@include breakpoint($large){
+// 		@include span(3 of 9);}
+// 		background: $module-background-color;
+// 		margin-bottom: 10px;
+// 		@include border-radius();
+// 		@include box-shadow(#000 1px 1xpx 1px);
+// 		img{
+// 			background: grey;
+// 			width: 100%;
+// 			height : 150px;
+// 		}
+// 	}
+
+
+// .twoup{
+		
+// 		height: 520px;
+// 		@include breakpoint($large){
+// 		@include span(6 of 9);}
+// 		margin-bottom: 10px;
+// 		background: $module-background-color;
+// 		@include border-radius();
+// 	}
+
+

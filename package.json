@@ -1,0 +1,35 @@
+{
+  "name": "workflows",
+  "version": "0.0.1",
+  "description": "A project to showcase workflows",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jim-mcdougall/online-magazine.git"
+  },
+  "author": "Jim McDougall",
+  "license": "ISC",
+  "devDependencies": {
+    "compass": "^0.1.1",
+    "gulp": "^3.9.0",
+    "gulp-bower": "0.0.11",
+    "gulp-browserify": "^0.5.1",
+    "gulp-coffee": "^2.3.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.3.1",
+    "gulp-if": "^2.0.0",
+    "gulp-jquery": "^1.1.1",
+    "gulp-minify-html": "^1.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1",
+    "gulp-util": "^3.0.7",
+    "jquery": "^2.1.4",
+    "mustache": "^2.2.1",
+    "sass": "^0.5.0",
+    "susy": "^2.2.9"
+  }
+}

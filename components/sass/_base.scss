@@ -1,0 +1,13 @@
+body{
+	background: $background-colour;
+	font: $font-primary;
+}
+
+
+#{headings()} {
+    font-family: $font-primary;
+    font-weight: 400;
+    color: $darkgray;
+    font-size: $hp-title;
+}
+
