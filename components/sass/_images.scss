@@ -1,0 +1,21 @@
+// --------------- Images -------------- // 
+
+#feature-001{
+		@include backImage ('../images/feature-images/nurse-feature-tn.jpg');
+}
+
+#feature-002{
+		@include backImage ('../images/feature-images/lemn-feature-tn.jpg');
+}
+
+
+#feature-003{
+		@include backImage ('../images/heritage-images/mother-of-the-sea.jpg');
+}
+
+
+
+#kids-on-campus{
+		@include backImage ('../images/carousel-images/kids-on-campus.jpg');
+		height: 500px;
+}

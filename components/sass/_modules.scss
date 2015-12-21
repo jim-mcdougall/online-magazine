@@ -1,9 +1,49 @@
-// --------------- Images -------------- // 
+//  full width image
 
-#feature-001{
-		@include backImage ('../images/feature-images/nurse-feature-tn.jpg');
+.image-carousel{
+	background: $background-colour;
 }
 
-#feature-002{
-		@include backImage ('../images/feature-images/lemn-feature-tn.jpg');
+
+.carousel-text-wrapper{
+	width: 75%;
+	margin: 0px auto;
+	display: block;
+	height: 100px;
+
+}
+
+.carousel-text-container{
+	margin-top: 350px;
+	width: 33%;
+	background-color: #fff;
+	float: left;
+	@include clearfix;
+	float: left;
+	text-align: center;
+	font-family: $font-primary;
+	h1{
+		padding: 20px 30px 0px 30px;
+		font-weight: 400;
+		font-style: italic;
+		text-transform: none;
+		font-size: 1rem;
+	}
+	p{ 
+		padding:  20px 30px 20px 30px;
+		font-size: 0.8rem;
+	}
+}
+
+.carousel-text-container--left{
+  z-index: 9999;  box-shadow: 10px 0px 10px #000;
+
+
+}
+.carousel-text-container--center{
+
+}
+.carousel-text-container--right{
+
+
 }
