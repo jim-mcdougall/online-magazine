@@ -1,25 +1,9 @@
-// content-boxes
+// --------------- Images -------------- // 
 
-$content-box-padding: 20px;
+#feature-001{
+		@include backImage ('../images/feature-images/nurse-feature-tn.jpg');
+}
 
-.masonry__item{
-
-	h2{
-		padding:  $content-box-padding;
-		font-weight: 300;
-		span{
-			font-weight: 600;
-		}//span
-	
-	}//h2
-	}//contentbox
-
-
-
-
-
-
-
-
-
-
+#feature-002{
+		@include backImage ('../images/feature-images/lemn-feature-tn.jpg');
+}

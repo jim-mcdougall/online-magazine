@@ -453,9 +453,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrap {
-  max-width: 1140px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
+  width: 75%;
 }
 .wrap:after {
   content: " ";
@@ -476,28 +477,146 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 2.43902%;
 }
 
-.masonry__item.one-up {
+.masonry__item--feature {
+  border-top: 3px solid #751aa3;
+}
+.masonry__item--feature .categorytag {
+  background-color: #751aa3;
+  -moz-border-radius: 0px 0px 5px 5px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px 0px 5px 5px;
+  display: block;
+  width: 70px;
+  text-align: center;
+  color: #fff;
+  font-family: "Open Sans", serif;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding: 5px 5px 5px 5px;
+}
+
+.masonry__item--opinion {
+  border-top: 3px solid #00d8ff;
+}
+.masonry__item--opinion .categorytag {
+  background-color: #00d8ff;
+  -moz-border-radius: 0px 0px 5px 5px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px 0px 5px 5px;
+  display: block;
+  width: 70px;
+  text-align: center;
+  color: #fff;
+  font-family: "Open Sans", serif;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding: 5px 5px 5px 5px;
+}
+
+.masonry__item--one-up {
   width: 31.70732%;
   height: 300px;
   background-color: #ffffff;
 }
+.masonry__item--one-up h2 {
+  padding: 5%;
+  font-weight: 300;
+  font-size: 1.2rem;
+  z-index: 9999;
+  margin-top: 50%;
+  line-height: 115%;
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  line-height: 115%;
+}
+.masonry__item--one-up h2 span {
+  font-weight: 600;
+}
+.masonry__item--one-up h2 a {
+  text-decoration: none;
+  color: #343640;
+}
+.masonry__item--one-up h2 a:hover {
+  text-decoration: underline;
+}
+.masonry__item--one-up .categorytag {
+  margin: 0px auto;
+}
 
-.masonry__item.two-up {
+.masonry__item--two-up {
   width: 65.85366%;
   height: 300px;
   background-color: #ffffff;
 }
+.masonry__item--two-up .categorytag {
+  margin: 0px 70px;
+}
+.masonry__item--two-up h2 {
+  padding: 5%;
+  font-weight: 300;
+  font-size: 1.2rem;
+  z-index: 9999;
+  margin-top: 20%;
+  line-height: 115%;
+  background-color: #fff;
+  display: block;
+  width: 50%;
+  line-height: 115%;
+  margin-left: -10px;
+}
+.masonry__item--two-up h2 span {
+  font-weight: 600;
+}
+.masonry__item--two-up h2 a {
+  text-decoration: none;
+  color: #343640;
+}
+.masonry__item--two-up h2 a:hover {
+  text-decoration: underline;
+}
 
-.masonry__item.two-up-dbl {
+.masonry__item--two-up-dbl {
   width: 65.85366%;
-  height: 600px;
+  height: 620px;
   background-color: #ffffff;
 }
-
-.masonry__item h2 {
-  padding: 20px;
+.masonry__item--two-up-dbl h2 {
+  padding: 5%;
   font-weight: 300;
+  font-size: 1.2rem;
+  z-index: 9999;
+  margin-top: 70%;
+  line-height: 115%;
+  background-color: #fff;
+  display: block;
+  width: 50%;
+  line-height: 115%;
+  margin-left: -10px;
 }
-.masonry__item h2 span {
+.masonry__item--two-up-dbl h2 span {
   font-weight: 600;
+}
+.masonry__item--two-up-dbl h2 a {
+  text-decoration: none;
+  color: #343640;
+}
+.masonry__item--two-up-dbl h2 a:hover {
+  text-decoration: underline;
+}
+
+#feature-001 {
+  background: url("../images/feature-images/nurse-feature-tn.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+  background-color: #fff;
+}
+
+#feature-002 {
+  background: url("../images/feature-images/lemn-feature-tn.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+  background-color: #fff;
 }

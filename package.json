@@ -1,11 +1,7 @@
 {
-  "name": "workflows",
+  "name": "Magazine",
   "version": "0.0.1",
-  "description": "A project to showcase workflows",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "Online Magazine Project",
   "repository": {
     "type": "git",
     "url": "https://github.com/jim-mcdougall/online-magazine.git"

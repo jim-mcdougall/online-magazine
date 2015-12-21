@@ -1,7 +1,7 @@
 @import "susy"; 
 
 $susy: (
-  container: 1140px, 
+  container: 960px, 
   columns: 12, 
   gutters: 0.4, 
   global-box-sizing: border-box, 
@@ -12,6 +12,7 @@ $susy: (
 
 .wrap {
   @include container;
+  width: 75%;
 }
 
 // Masonry Layout
@@ -31,27 +32,60 @@ $susy: (
   // Masonry item with. This is required to determine individual item width
   width: span(4);
   margin-top: gutter();
-}
+  }
 
-.masonry__item.one-up { 
+
+//----------   1st Defining Tag
+//----------  Categories type > Defines the type of content: Feature, opinion etc.
+
+.masonry__item--feature{
+  border-top: 3px solid $feature-colour;
+    .categorytag{
+    @include categorytag($feature-colour);
+    }
+  }
+
+.masonry__item--opinion{
+  border-top: 3px solid $opinion-colour;
+    .categorytag{
+    @include categorytag($opinion-colour);
+    }
+  }
+
+
+//----------  2nd Defining Tag
+//----------  Component size> Defines the size of the box,
+//----------  one-up = small box
+//----------  two-up = small box spanning two columns
+//----------  two-up-dbl = small box spanning two columns, double in height
+
+.masonry__item--one-up { 
 	width: span(4);
 	height: 300px;
 	background-color: #ffffff;
-}
+  h2{ @include article-title(100%, 50%);} //width & padding top  
+  .categorytag{ margin: 0px auto;}   
+} //masonry__item--one-up
 
-.masonry__item.two-up { 
+.masonry__item--two-up { 
 	width: span(8);
 	height: 300px;
 	background-color: #ffffff;
+  .categorytag{
+    margin: 0px 70px;}
+  h2{ 
+    @include article-title(50%, 20%); //width & padding top
+    margin-left: -10px; }
+} //masonry__item--two-up
 
-}
-
-.masonry__item.two-up-dbl { 
+.masonry__item--two-up-dbl { 
 	width: span(8);
-	height: 600px;
+	height: 620px;
 	background-color: #ffffff;
-}
-
+    h2{ 
+    @include article-title(50%, 70%); //width & padding top
+    margin-left: -10px; }
+  }
 
 
 
