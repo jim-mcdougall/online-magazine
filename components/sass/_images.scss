@@ -14,8 +14,12 @@
 }
 
 
+#opinion-001{
+		@include opinionImage ('../images/opinion-images/opinion-001.png');
+}
+
+
 
 #kids-on-campus{
-		@include backImage ('../images/carousel-images/kids-on-campus.jpg');
-		height: 500px;
+		@include fullwidthImage ('../images/carousel-images/kids-on-campus.jpg');
 }

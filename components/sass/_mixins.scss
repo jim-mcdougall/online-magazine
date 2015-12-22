@@ -1,10 +1,34 @@
+@mixin clearspace{
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
 @mixin backImage($image) {
 	background: url($image);
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: 100%;
-	background-color: #fff;
-}
+  background-color: $white;}
+
+// variation for opinion image position bottom
+@mixin opinionImage($image) {
+  background: url($image);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 70%;
+  background-color: $white;}
+
+@mixin fullwidthImage($image) {
+  background: url($image);
+      display: inline-block;
+    width: 100%;
+    font-size: 0;
+    vertical-align: top;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat; }
 
 
 @mixin article-title($article-title-width, $article-title-margintop){
@@ -14,7 +38,7 @@
     z-index: 9999;
     margin-top: ($article-title-margintop);
     line-height: 115%;
-    background-color: #fff;
+    background-color: $block-background-color;
     display: block;
     width: ($article-title-width);
     line-height: 115%;
@@ -35,6 +59,7 @@
 	background-color: ($feature-colour);
 	@include border-radius(0px 0px 5px 5px);
 	display: block;
+  font-weight: 600;
 	width: 70px;
 	text-align: center;
 	color: #fff;
@@ -42,4 +67,15 @@
 	text-transform: uppercase;
 	font-size: 0.7rem;
 	padding: 5px 5px 5px 5px;
+}
+
+
+@mixin hoverBlock{
+    cursor: pointer;
+    display:block;
+    opacity: 0.85;
+    background-color: #eaeaea;
+    filter: alpha(opacity=40); /* For IE8 and earlier */ 
+    transition: 0.5s ease;
+
 }

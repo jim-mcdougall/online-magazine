@@ -53,36 +53,59 @@ $susy: (
   }
 
 
+
+//-----------------------------
+
+.filter{
+  width: span(1);
+  background-color: #fff;
+  height: 500px;
+  margin-left: -100px;
+  padding-top: 20px;
+}
+
+//------------------------------
+
+
 //----------  2nd Defining Tag
 //----------  Component size> Defines the size of the box,
 //----------  one-up = small box  / two-up = small box spanning two columns
 //----------  two-up-dbl = small box spanning two columns, double in height
 
+$block-background-color: $white;
+
 .masonry__item--one-up { 
 	width: span(4);
 	height: 300px;
-	background-color: #ffffff;
+	background-color: $block-background-color;
+  text-decoration: none;
+  color: $darkgray;
   h2{ @include article-title(100%, 50%);} //width & padding top  
   .categorytag{ margin: 0px auto;}   
+  &:hover{
+    @include hoverBlock();
+    }
 } //masonry__item--one-up
 
 .masonry__item--two-up { 
 	width: span(8);
 	height: 300px;
-	background-color: #ffffff;
+	background-color: $block-background-color;
+     opacity: 0.90;
     .categorytag{
-    margin: 0px 70px;}
+    margin: 0px 90px;}
     h2{ 
-    @include article-title(50%, 15%); //width & padding top
-    margin-left: -10px; }
+    @include article-title(50%, 20%); //width & padding top
+    margin-left: -5px; }
+
 } //masonry__item--two-up
 
 .masonry__item--two-up-dbl { 
 	width: span(8);
 	height: 620px;
-	background-color: #ffffff;
+	background-color: $block-background-color;
     .categorytag{
-    margin: 60% 0px 20px -10px;
+    margin: 65% 0px 20px -5px;
     @include border-radius(5px);
     font-weight: 400;
     font-style: italic;
@@ -94,7 +117,25 @@ $susy: (
     h2{ 
     @include article-title(60%, 1%); //width & padding top
     margin-left: -10px; }
+    &:hover{
+      @include hoverBlock();
+    }
   }
+
+
+//------------- additional mark up for flipped layout on opinion block
+
+.masonry__item--one-up--opinion { 
+  width: span(4);
+  height: 300px;
+  background-color: $block-background-color;
+  text-decoration: none;
+  h2{ @include article-title(100%, 0%);} //width & padding top  
+  .categorytag{ margin: 0px auto;}   
+  &:hover{
+      @include hoverBlock();
+    }
+} //masonry__item--one-up
 
 
 

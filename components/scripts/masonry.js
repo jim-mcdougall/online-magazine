@@ -5,6 +5,7 @@ jQuery(document).ready(function($) {
   $masonryContainer.masonry({
     columnWidth: '.masonry__column',
     gutter: '.masonry__gutter',
+    isAnimated: false,
     itemSelector: '.masonry__item'
   });
 });
