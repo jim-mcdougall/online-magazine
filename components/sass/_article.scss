@@ -1,0 +1,374 @@
+.breakpoints:after{
+		height: 20px;
+		color: #fff;
+		display: block;
+		  @include breakpoint(xs) {
+		  content: "xs";
+		}
+	 	  @include breakpoint(sm) {
+	 	  content: "sm";
+ 		 }
+  @include breakpoint(md) {
+	 	  content: "md";
+ 		 }
+ 		   @include breakpoint(lg) {
+	 	  content: "lg";
+ 		 }
+
+
+}
+
+.article-container{
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 40px;
+    @include breakpoint(sm) {
+      width: 90%;
+      flex-wrap: wrap;
+      flex-direction: row;
+  	}
+  @include breakpoint(md) {
+      width: 75%;
+      flex-wrap: wrap;
+      flex-direction: row;
+  	}
+  
+}
+
+
+.article-detail-column{
+	background: #fff;
+	width: 100%;
+
+	@include clearspace;
+	  @include breakpoint(md) {
+      width: 32%; 
+      float: left;  
+      order: 1;
+  }
+      @include breakpoint(xs) {
+      width: 100%;
+   
+  }
+
+}
+
+
+.article-detail-container{
+	width: 100%;
+	@include clearspace;
+	  @include breakpoint(md) {
+      width: 100%; 
+      margin-top: 25px; 
+      float:left;
+      height: 90%;
+      border-right: 1px solid $lightgrey;
+
+  }
+}
+
+
+// article detail stylessocial-icons"
+
+.article-details{
+	padding: 5px 10%;
+	margin: 0 auto;
+	display: table;
+	padding-top: 30px;
+}
+
+
+.article-details p{
+color: #666666;
+	font-size: 0.8em;
+	float: left;
+	width: 150px;
+	display: block;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	font-family : $font-primary;
+	@include clearfix;
+	  @include breakpoint(md) {
+	  float: right;
+      text-align: right;
+	  margin-right: 20px;
+	  padding-right: 0px;
+	  padding-bottom: 25px;
+	  }
+}
+.article-details p:after {
+	 content: "";
+	 background-repeat: no-repeat;
+	 position: absolute;
+	 margin-left: 8px;
+     width: 20px;
+     height: 20px;
+     margin-top: -6px;
+     display: inline-block;
+      @include breakpoint(md) {
+	 margin-left: 12px;
+      }
+	}
+
+
+p#datelink{
+	font-style: italic;
+	font-weight: 300;
+}
+p#datelink:after {
+	 background: url('../images/icons/article-icon-calendar.svg'); 
+	 content: "";
+	 background-repeat: no-repeat;
+	 position: absolute;
+	 margin-bottom: 0px;
+	}
+
+p#author{
+	
+	padding-bottom: 15px;
+	font-style: italic;
+}
+
+
+p#author:after {
+	 background: url('../images/icons/article-icon-author.svg'); 
+	 content: "";
+	 background-repeat: no-repeat;
+	 position: absolute;
+	 margin-bottom: 0px;
+	}
+
+
+
+
+
+		
+		@media screen and (max-width:372px) { 
+			#social-icons--article-top{
+		float: left;
+		width: 200px;
+		padding-left: 8%;
+		padding-bottom: 15px;}
+	 }
+	 #social-icons--article-top{
+		@media screen and (min-width: 373px) and (max-width: 991px)  { 
+		  margin: 0 auto;
+	 	  display: table;
+	 	  width: 160px;
+	 	  padding-bottom: 20px;
+	 	  padding-top: 20px;
+	 	  border-top: 1px solid $lightgrey;
+		}}
+		 
+		@media screen and (min-width: 992px) { 
+	 	 #social-icons--article-top{
+	 	  	display: block;
+	      width: 75%;
+		  margin-top: 15px;
+		  padding-top: 25px;
+		  float: right;
+	 	  margin-right: 20px;
+	 	  border-top: 1px solid $lightgrey;
+ 	 }}
+
+
+
+@media screen and (max-width:372px) { 
+		#social-icons--article-top p{
+	 	  display: none;
+	 	  }}
+	
+
+	 	#social-icons--article-top p{
+		@media screen and (min-width: 373px) and (max-width: 991px)  { 	
+	      font-size: 0.7em;
+	      text-align: center;
+	      padding-bottom: 10px;
+	      }}
+	  
+	
+		@media screen and (min-width: 992px) { 
+	 	 #social-icons--article-top p{
+	      text-transform: uppercase;
+	      float: right;
+	      font-size: 0.7em;
+	      margin-top: 0px;
+	      width: 100%;
+	      padding-bottom: 12px;
+	      text-align: right;
+	      margin-bottom: 0px;
+	      }}
+
+
+
+
+ul#social-icons--article-top li a{
+  float: left;
+  margin: 0px 0px 3px 5px;//
+    @include breakpoint(sm) {
+ float: right;
+    }
+}
+
+
+// article content styles
+
+
+.article-content{
+	order: 2;
+	background: #fff;
+	width: 100%;
+	border-top: 1px solid $lightgrey;
+
+	  @include breakpoint(md) {
+      width: 68%;
+      float: left;
+      margin-top: -50px;
+      padding-bottom: 40px;
+	  }
+	p{	
+	  font-family: $font-secondary;
+	  font-weight: 200;
+	  line-height: 1.4rem;
+	  padding: 10px 40px 10px 20px;
+	  &:first-child{
+	  margin-top: 25px;
+	  font-weight: bold;
+	  }
+	  &:first-child:first-letter{
+	  float: left;	
+	  font-family: $font-primary;
+	  font-size: 3rem;
+	  line-height: 1.9rem;
+	  color: #fff;
+	  background: #000;
+	  padding: 10px 10px 10px 10px;
+	  margin: -10px 8px 0px 0px;
+	  }
+	}  
+}
+
+
+
+// .article-video{
+// 	margin-left: -43%;
+// 	padding: 25px 0px;
+// 	
+// 	width: 140%;
+// 	  @include breakpoint(sm) {
+//       width: 75%;
+//       flex-wrap: wrap;
+//   }
+// }
+.videowrapper {
+    float: none;
+    clear: both;
+    width: 100%;
+    margin-left: 2%;
+    position: relative;
+    background: #fff;
+    margin: 0px 0px;
+    padding-bottom: 85%;
+    padding-top: 25px;
+    height: 0;
+      @include breakpoint(sm) {
+      width: 96%;
+      margin-left: 2%;
+	  }	
+      @include breakpoint(md) {
+      width: 140%;
+      margin-left: -43%;
+      }
+}
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+//--------------------->  Blockquote
+
+blockquote {
+	color: $blue;
+	font-family: $font-primary;
+	font-weight: 700;
+	font-size: 1em;
+	line-height: 1.4em;
+	text-align: center;
+	margin: 0 auto;
+	width: 70%;
+	padding: 60px 0px 60px 0px;
+	    @include breakpoint(md) {
+		text-align: right;
+		width: 40%;
+		float: left;
+		background-color: #fff;
+		padding: 60px 25px 60px 40px;
+		margin-left: -27%;
+	}
+	&:before{
+	line-height: 1.1em;
+	line-height: 0;
+	display: block;
+    font-size: 700%;
+    content: "\201C"; // open close quotes
+    height: 1px;
+    position:relative;
+    top:-10px;
+	}
+	&:after{
+	line-height: 1.1em;	
+	line-height: 0.2;
+	display: block;
+    font-size: 700%;
+    content: "\201D"; // double close quotes
+    height: 1px;
+    position:relative;
+    top:40px;
+	}
+}
+
+
+//--------------------->  Images
+
+.article-image {
+	width: 140%;
+	img{
+		width: 100%;
+		@include breakpoint(md){
+		margin-left: -5%;
+		float: left;
+		}
+	}
+
+
+	 p, p:first-child, p:first-child:first-letter{
+     font-size: 0.8em;
+     font-style: italic;
+     color: $darkgray;
+     font-weight: 400;
+     font-family: "Open Sans",sans-serif;
+	
+	 text-align: left;
+	 background: #fff;	
+	 @include clearspace;
+	 background: none;
+	 float: none;
+	 margin-left: -5%;
+     display: table;
+	}
+}
+
+
+
+
+

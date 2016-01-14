@@ -1,8 +1,23 @@
-body{
-	background: $background-colour;
-	font: $font-primary;
+html{
+	font-size: 16px;
+	min-width: 360px;
 }
 
+body{
+	background: $background-colour;
+	// font: $font-primary;
+	font-size: 16px;
+}
+
+a { text-decoration: none;
+    color: $hyperlink-colour;
+	&:hover{
+	text-decoration: underline;
+	}
+}
+
+
+p {   font-family: $font-primary;}
 
 #{headings()} {
     font-family: $font-primary;
@@ -11,3 +26,12 @@ body{
     line-height: auto;
 }
 
+a.blocklink article h2{
+		font: $font-primary;
+		color: $primary-text-colour;
+}
+
+
+q {
+  quotes: "“" "”" "‘" "’";
+}

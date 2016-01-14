@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300|Bitter:400,400italic);
+
+
 $darkgray 		: #343640;
 $white		    : #ffffff;
 $blue   		: #00d8ff;
@@ -8,18 +11,24 @@ $lightgrey		: #eaeaea;
 
 $background-colour: $darkgray;
 $module-background-color: $white;
-
 $primary-text-colour: $darkgray;
 
+$hyperlink-colour: $purple;
 
 
-$font-primary: 'Open Sans', serif;
-$font-secondary: Brie, serif;
-
-
-//  Catego
+//  Category
 $feature-colour: $purple;
 $opinion-colour: $blue;
+$video-colour: $yellow;
+$audio-colour: $orange;
+
+
+
+
+$font-primary: 'Open Sans', sans-serif;
+$font-secondary: Bitter, sans-serif;
+
+
 
 
 
@@ -27,3 +36,5 @@ $opinion-colour: $blue;
 $default-border-radius: 5px;
 
 $hp-title: 1.5rem;
+
+

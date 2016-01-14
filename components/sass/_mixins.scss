@@ -1,3 +1,26 @@
+@mixin breakpoint($class) {
+  @if $class == xs {
+    @media (max-width: 729px) { @content; }
+  }
+ 
+  @else if $class == sm {
+    @media (min-width: 730px) { @content; }
+  }
+ 
+  @else if $class == md {
+    @media (min-width: 992px) { @content; }
+  }
+ 
+  @else if $class == lg {
+    @media (min-width: 1200px) { @content; }
+  }
+ 
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}
+
+
 @mixin clearspace{
   padding: 0px;
   margin: 0px;
@@ -23,19 +46,23 @@
 @mixin fullwidthImage($image) {
   background: url($image);
       display: inline-block;
-    width: 100%;
     font-size: 0;
+    width: 100%;
     vertical-align: top;
+    background-size: 200%;
+    background-repeat: no-repeat;
+     @include breakpoint(lg) {
     background-size: 100%;
-    background-position: 50% 50%;
-    background-repeat: no-repeat; }
+  }
+  }
 
 
-@mixin article-title($article-title-width, $article-title-margintop){
+@mixin article-title($article-title-width, $article-title-margintop, $block-background-color){
     padding:  5%;
     font-weight: 300;
-    font-size: 1.2rem;
-    z-index: 9999;
+    font-size: 1rem;
+    z-index: 9999;   
+    color: $primary-text-colour;
     margin-top: ($article-title-margintop);
     line-height: 115%;
     background-color: $block-background-color;
@@ -45,13 +72,6 @@
     span{
       font-weight: 600;
     }//span
-    a{
-      text-decoration: none;
-      color: $primary-text-colour;
-      &:hover{
-      text-decoration: underline;
-      }
-    }
 }
 
 
@@ -67,6 +87,21 @@
 	text-transform: uppercase;
 	font-size: 0.7rem;
 	padding: 5px 5px 5px 5px;
+}
+
+@mixin filterTag($feature-colour){
+  background-color: ($feature-colour);
+  @include border-radius(5px);
+  text-decoration: none;
+  width: 100%;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  font-family: $font-primary;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  padding: 3px 5px 3px 5px;
+  margin-bottom: 3px;
 }
 
 

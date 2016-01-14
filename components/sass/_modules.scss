@@ -3,16 +3,25 @@
 
 
 .leadImage{
-	height: 500px;
+	height: 300px;
 	@include clearspace;
+	@include breakpoint(md) {
+      height: 450px;
+      float: left;
+  }
 	
 
 	header{
 		text-align: center;
-		position: relative;
-		width: 400px;
-		top: 25%;
-		left: 50%;
+		margin: 0 auto;
+		padding-top: 50px;
+		width: 80%;
+		@include breakpoint(md) {
+		
+		width: 25%;
+		padding-top: 50px;
+	}
+		
 		h1{
 			width: 200px;
 			margin: 0px auto;	
@@ -21,6 +30,7 @@
 			font-size: 2rem;
 			font-weight: 800;
 			display: inline;
+
 			span{
 			padding: 10px;
 			background-color: #fff;

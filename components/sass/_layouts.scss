@@ -1,38 +1,91 @@
-@import "susy"; 
 
-$susy: (
-  container: 960px, 
-  columns: 12, 
-  gutters: 0.4, 
-  global-box-sizing: border-box, 
-  // debug: (image: show-columns)
-  );
+$bp-small: 0em; 
+$bp-medium: 25em;
+$bp-large: 38em; // 608
+
+$breakpoint-no-query-fallbacks: true;
+
 
 @include border-box-sizing;
 
-.wrap {
-  @include container;
-  width: 75%;
+.wrap{
+  margin: 0px 0px;  
+   @include breakpoint(sm) {
+    margin: 0px 20px; 
+    }
+    @include breakpoint(md) {
+    margin: 0px 20px; 
+    }
 }
 
-// Masonry Layout
-// --------------
-
-// Sets masonry column size
-.masonry__column {
-  width: span(4);
-}
-
-// Sets masonry gutter size
-.masonry__gutter {
-  width: gutter();
-}
-
-.masonry__item {
-  // Masonry item with. This is required to determine individual item width
-  width: span(4);
-  margin-top: gutter();
+.container{
+  margin: 0 auto;
+  font-size: 16px;
+  width: 100%;
+  @include breakpoint(sm) {
+      width: 100%;
   }
+  @include breakpoint(md) {
+      width: 75%;
+  }
+}
+
+
+.filter{
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    .category-filters p, .social-icons p{display: none;}
+    .category-filters{min-width: 40%;float: left;padding-right: 15px;}
+    .social-icons{min-width: 40%;float: left;}
+    ul.category-filters li{float: left; margin: 5px 5px 0px 0px;}
+    ul.social-icons li{float: left; margin: 0px 5px 0px 0px;}
+    ul.social-icons li a{float: right; margin: 0px 3px 0px 0px;}
+
+     @include breakpoint(md) {
+      width: 8%;
+      margin-right: 2%;
+      float: left;
+      .category-filters p, .social-icons p{
+        display: block;
+      float: right;
+      margin-top: 20px;
+      min-width: 65px;
+      padding-bottom: 7px;
+      text-align: right;
+      margin-bottom: 0px;}
+      .category-filters{max-width: 45%;float: right;padding-right: 0px;padding-bottom: 5px;}
+      .social-icons{max-width: 45%;float: right;clear: both;}
+        ul.category-filters li{float: right; margin: 5px 0px 5px 0px;}
+        ul.social-icons li a{float: right; margin: 0px 0px 5px 0px;}
+         
+      }
+    }
+
+ .filter{
+    // @include susy-breakpoint(0px, 12) {
+    //   @include span(12 of 12);
+    //   .category-filters p, .social-icons p{text-align: center;}
+    //   .category-filters{max-width: 100%;float: left;}
+    //   .social-icons{max-width: 100%;float: left;}
+    //   ul li{float: left; margin: 0px 5px 0px 0px;}
+    //   ul.social-icons li a{float: left; margin: 0px 5px 0px 0px;}
+    //   @include break;
+    // }
+    
+
+
+}
+
+.item-container {
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    @include breakpoint(md) {
+      width: 90%;  
+      }
+}
+
 
 
 //----------   1st Defining Tag
@@ -54,15 +107,72 @@ $susy: (
 
 
 
-//-----------------------------
+//--------- Contains filter tags e.g. feature/opinion etc ------------
 
 .filter{
-  width: span(1);
-  background-color: #fff;
-  height: 500px;
-  margin-left: -100px;
-  padding-top: 20px;
+ 
+
+    p{
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 0.6em;
+    }
+    ul{
+      text-decoration: none;
+      li{
+        text-align: right;
+        margin-bottom: 5px;
+        a.contentType-button__feature{ @include filterTag($feature-colour); }
+        a.contentType-button__opinion{ @include filterTag($opinion-colour); }
+        a.contentType-button__video{ @include filterTag($video-colour); }
+        a.contentType-button__audio{ @include filterTag($audio-colour); }
+        }
+      }
+
+  }
+
+ul.social-icons li a{
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50%;
+  width: 25px;
+  height:  25px;
+  display: block;
+  text-align:center;
+  line-height:28px;
+  float: right;
+  margin: 0px 5px 3px 20px;
+  @include clearfix;
+  transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+  &.socicon-linkedin { background-color: #4DA7DE; }
+  &.socicon-facebook { background-color: #3E5B98; }
+  &.socicon-twitter { background-color: #4DA7DE; }
+  &.socicon-rss { background-color: #3371B7; }
+  &.socicon-pocket { background-color: #ED4055; }
+  &:hover{ opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */}
 }
+
+
+.socicon-linkedin::before{
+  font-size: 0.7em;
+}
+.socicon-facebook::before{
+  font-size: 0.7em;
+}
+.socicon-twitter::before{
+  font-size: 0.7em;
+}
+.socicon-rss::before{
+  font-size: 0.7em;
+}
+.socicon-pocket::before{
+  font-size: 0.7em;
+}
+
+
 
 //------------------------------
 
@@ -74,13 +184,24 @@ $susy: (
 
 $block-background-color: $white;
 
-.masonry__item--one-up { 
-	width: span(4);
-	height: 300px;
+.masonry__item--one-up {
+  width: 48%;
+  margin-right: 1%;  
+  margin-bottom: 1%;  
+  float: left;
+  @include breakpoint(sm) {
+      width: 24%;
+  }
+    @include breakpoint(lg) {
+      width: 24%;
+  }
+
+  min-height: 250px;
+	max-height: 280px;
 	background-color: $block-background-color;
   text-decoration: none;
   color: $darkgray;
-  h2{ @include article-title(100%, 50%);} //width & padding top  
+  h2{ @include article-title(100%, 40%,$block-background-color);} //width & padding top  
   .categorytag{ margin: 0px auto;}   
   &:hover{
     @include hoverBlock();
@@ -88,49 +209,50 @@ $block-background-color: $white;
 } //masonry__item--one-up
 
 .masonry__item--two-up { 
-	width: span(8);
-	height: 300px;
+  width: 99%;
+    @include breakpoint(md) {
+      width: 72%;
+  }
+    @include breakpoint(lg) {
+      width: 49%;
+  }
+  margin-right: 1%;  
+  margin-bottom: 1%;  
+  float: left;
+  min-height: 250px;
+  max-height: 280px;
 	background-color: $block-background-color;
      opacity: 0.90;
     .categorytag{
     margin: 0px 90px;}
     h2{ 
-    @include article-title(50%, 20%); //width & padding top
+    color: $primary-text-colour;
+    @include article-title(50%, 15%,$block-background-color); //width & padding top
     margin-left: -5px; }
 
 } //masonry__item--two-up
 
-.masonry__item--two-up-dbl { 
-	width: span(8);
-	height: 620px;
-	background-color: $block-background-color;
-    .categorytag{
-    margin: 65% 0px 20px -5px;
-    @include border-radius(5px);
-    font-weight: 400;
-    font-style: italic;
-    text-transform: none;
-    font-size: 1rem;
-    padding: 7px;
-    width: 200px;
-   }
-    h2{ 
-    @include article-title(60%, 1%); //width & padding top
-    margin-left: -10px; }
-    &:hover{
-      @include hoverBlock();
-    }
-  }
-
-
 //------------- additional mark up for flipped layout on opinion block
 
 .masonry__item--one-up--opinion { 
-  width: span(4);
-  height: 300px;
+  min-height: 250px;
+  max-height: 280px;
+  margin-right: 1%;  
+  margin-bottom: 1%;  
+  float: left;
+  width: 48%; 
+    @include breakpoint(sm) {
+      width: 24%;
+  }
+    @include breakpoint(lg) {
+      width: 24%;
+  }
   background-color: $block-background-color;
   text-decoration: none;
-  h2{ @include article-title(100%, 0%);} //width & padding top  
+  h2{ 
+  @include article-title(100%, 0%, none);//width & padding top  
+  background-color: none!important;
+  } 
   .categorytag{ margin: 0px auto;}   
   &:hover{
       @include hoverBlock();
