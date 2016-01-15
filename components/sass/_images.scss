@@ -1,25 +1,25 @@
 // --------------- Images -------------- // 
 
-#feature-001{
+.feature-001{
 		@include backImage ('../images/feature-images/nurse-feature-tn.jpg');
 }
 
-#feature-002{
+.feature-002{
 		@include backImage ('../images/feature-images/lemn-feature-tn.jpg');
 }
 
 
-#feature-003{
+.feature-003{
 		@include backImage ('../images/heritage-images/mother-of-the-sea.jpg');
 }
 
 
-#opinion-001{
+.opinion-001{
 		@include opinionImage ('../images/opinion-images/opinion-001.png');
 }
 
 
 
-#kids-on-campus{
+.kids-on-campus{
 		@include fullwidthImage ('../images/carousel-images/kids-on-campus.jpg');
 }

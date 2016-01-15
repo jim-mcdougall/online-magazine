@@ -32,8 +32,10 @@
 	background: url($image);
 	background-repeat: no-repeat;
 	background-position: top center;
-	background-size: 100%;
-  background-color: $white;}
+	background-size: auto 100%;
+  background-color: $white;
+
+background-position: 50%;}
 
 // variation for opinion image position bottom
 @mixin opinionImage($image) {

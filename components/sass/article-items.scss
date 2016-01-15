@@ -1,0 +1,248 @@
+$block-background-color: $white;
+// -------------------------------------------------
+
+
+.item-container {  // contains all article items and sections
+    width: 100%;
+    float: right;
+    @include breakpoint(md) {
+      width: 90%;  
+      }
+
+}
+.item-container_section{  // may wrap multiple feature/opinion items
+    float: left;
+
+
+}
+
+
+
+
+.article-item { // Generic - an individual feature/opinion item
+  width: 100%;
+  height: 100%;
+  float: left;
+  display: block;
+  margin: 0% 1% 1% 0%;
+  background-color: $block-background-color;
+  text-decoration: none;
+  color: $darkgray;
+    h2{ @include article-title(100%, 40%,$block-background-color);} //width & padding top  
+    .categorytag{ margin: 0px auto;}   
+    &:hover{
+    @include hoverBlock();
+    }}
+
+
+
+// outer styles
+
+.outer-onebyfour{
+  height: 500px;float: left;
+  @include breakpoint(md) {
+  width: 24%;
+  float: left;
+  margin-right: 1%;
+  }
+}
+
+.outer-twobytwo{
+  height: 470px;float: left;
+  @include breakpoint(md) {
+  width: 49%;
+  float: left;
+  }
+}
+
+.outer-twobythree{
+  height: 370px;
+  float: left;
+margin-right: 1%;
+  @include breakpoint(sm) {
+  width: 49%;
+  float: left;
+  }
+    .categorytag{
+    margin: 0px 90px;}
+    h2{ 
+    color: $primary-text-colour;
+    @include article-title(60%, 40%,$block-background-color); //width & padding top
+    margin-left: -3px; }
+}
+
+.outer-twobyfour{
+  height: 490px;
+  float: left;
+margin-right: 1%;
+  @include breakpoint(sm) {
+  width: 49%;
+  float: left;
+  }
+    .categorytag{
+    margin: 0px 90px;}
+    h2{ 
+    color: $primary-text-colour;
+    @include article-title(60%, 60%,$block-background-color); //width & padding top
+    margin-left: -5px; }
+}
+
+
+// inner styles
+
+.inner-onebytwo{
+  height: 250px;float: left;
+  margin-bottom: 4%;
+  @include breakpoint(sm)
+  {
+  position: relative;
+  background-color: $block-background-color;
+  }
+  h2{ @include 
+  article-title(100%, 0%,$block-background-color);
+  position: absolute;
+  bottom: 0;
+   } //width & padding top  
+  .categorytag{ margin: 0px auto;}   
+  &:hover{
+    @include hoverBlock();
+    }
+
+}
+
+
+.inner-onebyone{
+  height: 110px;float: left;
+  margin-bottom: 4%;
+  @include breakpoint(sm) {
+  background-color: $block-background-color;
+  }
+  background-image: none;
+  h2 {
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+.masonry__item--one-up {
+  width: 48%;
+
+  float: left;
+  @include breakpoint(sm) {
+      width: 24%;
+  }
+    @include breakpoint(lg) {
+      width: 24%;
+  }
+
+  min-height: 250px;
+	max-height: 280px;
+	background-color: $block-background-color;
+  text-decoration: none;
+  color: $darkgray;
+  h2{ @include article-title(100%, 40%,$block-background-color);} //width & padding top  
+  .categorytag{ margin: 0px auto;}   
+  &:hover{
+    @include hoverBlock();
+    }
+
+} //masonry__item--one-up
+
+article.masonry__item--one-up_half {
+  width: 48%;
+  margin-right: 1%;  
+  margin-bottom: 1%;  
+  float: left;
+    @include breakpoint(md) {
+      width: 24%;
+      background: $block-background-color;
+  }
+  min-height: 120px;
+  max-height: 125px;
+  text-decoration: none;
+  color: $darkgray;
+  h2{ @include article-title(100%, 5%,$block-background-color);} //width & padding top  
+  .categorytag{ margin: 0px auto;}   
+  &:hover{
+    @include hoverBlock();
+    }
+} //masonry__item--one-up
+
+.masonry__item--two-up { 
+  width: 99%;
+    @include breakpoint(md) {
+      width: 72%;
+    }
+    @include breakpoint(lg) {
+      width: 49%;
+    }
+  margin-right: 1%;  
+  margin-bottom: 1%;  
+  float: left;
+  min-height: 250px;
+  max-height: 280px;
+	background-color: $block-background-color;
+     opacity: 0.90;
+    .categorytag{
+    margin: 0px 90px;}
+    h2{ 
+    color: $primary-text-colour;
+    @include article-title(50%, 15%,$block-background-color); //width & padding top
+    margin-left: -5px; }
+
+} //masonry__item--two-up
+
+
+.masonry__item--two-up_dbl { 
+  width: 99%;
+    @include breakpoint(md) {
+      width: 72%;
+  }
+    @include breakpoint(lg) {
+      width: 49%;
+  }
+  margin-right: 1%;  
+  margin-bottom: 1%;  
+  float: left;
+  min-height: 500px;
+  max-height: 280px;
+  background-color: $block-background-color;
+     opacity: 0.90;
+    .categorytag{
+    margin: 0px 90px;}
+    h2{ 
+    color: $primary-text-colour;
+    @include article-title(50%, 15%,$block-background-color); //width & padding top
+    margin-left: -5px; }
+
+} //masonry__item--two-up
+//------------- additional mark up for flipped layout on opinion block
+
+.masonry__item--one-up--opinion { 
+  min-height: 250px;
+  max-height: 280px;
+  margin-right: 1%;  
+  margin-bottom: 1%;  
+  float: left;
+  width: 48%; 
+    @include breakpoint(sm) {
+      width: 24%;
+  }
+    @include breakpoint(lg) {
+      width: 24%;
+  }
+  background-color: $block-background-color;
+  text-decoration: none;
+  h2{ 
+  @include article-title(100%, 0%, none);//width & padding top  
+  background-color: none!important;
+  } 
+  .categorytag{ margin: 0px auto;}   
+  &:hover{
+      @include hoverBlock();
+    }
+} //masonry__item--one-up
