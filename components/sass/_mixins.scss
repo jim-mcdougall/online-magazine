@@ -34,8 +34,12 @@
 	background-position: top center;
 	background-size: auto 100%;
   background-color: $white;
-
-background-position: 50%;}
+  background-position: 50%;
+       @include breakpoint(xs) {
+  background-size: 100% auto;
+  background-position: top center;
+       }
+}
 
 // variation for opinion image position bottom
 @mixin opinionImage($image) {
@@ -51,10 +55,17 @@ background-position: 50%;}
     font-size: 0;
     width: 100%;
     vertical-align: top;
-    background-size: 200%;
+    background-size: 150%;
+    background-position:  0 0%;
     background-repeat: no-repeat;
-     @include breakpoint(lg) {
+     @include breakpoint(sm) {
     background-size: 100%;
+    background-position:  0 0%;
+  }
+
+     @include breakpoint(lg) {
+    background-size: 120%;
+    background-position:  0 50%;
   }
   }
 

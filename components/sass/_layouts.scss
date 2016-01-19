@@ -11,10 +11,10 @@ $breakpoint-no-query-fallbacks: true;
 .wrap{
   margin: 0px 0px;  
    @include breakpoint(sm) {
-    margin: 0px 20px; 
+    margin: 0px 20px 0px 20px; 
     }
     @include breakpoint(md) {
-    margin: 0px 20px; 
+    margin: 0px 20px 0px 20px; 
     }
 }
 
@@ -22,8 +22,7 @@ $breakpoint-no-query-fallbacks: true;
   margin: 0 auto;
   font-size: 16px;
   width: 100%;
-  margin-top: 20px;
-  max-width: 1400px;
+ max-width: 1200px;
   @include breakpoint(sm) {
       width: 100%;
   }
@@ -32,17 +31,101 @@ $breakpoint-no-query-fallbacks: true;
   }
 }
 
+.head-container{
+  margin: 0 auto;
+  font-size: 16px;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+      height: 500px;
+
+  @include breakpoint(sm) {
+      width: 100%;
+      position: relative;
+      height: 100%;
+
+  }
+  @include breakpoint(md) {
+      width: 95%;
+      position: relative;
+      height: 100%;
+
+  }
+}
+
+
+.home-intro-container{
+  width: 100%;
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+  bottom: 0;
+
+     @include breakpoint(md) {
+     width: 44%;
+     position: absolute;
+     right: 0;
+     margin-right: 10px;
+     bottom: 0;
+     }
+    h1{
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 400;
+      margin: 0px 0px 0px 0px;
+      text-transform: uppercase;
+       @include breakpoint(md) {
+      margin: 0px 0px -25px 0px;
+        }
+    }
+    h2{
+      color: #fff;
+      font-size: 4em;
+      font-weight: 800;
+      margin: 0px 0px -6px -6px;
+      @include breakpoint(md) {
+        font-size: 5.5em;
+        margin: 0px 0px -12px -6px;
+        }
+      @include breakpoint(lg) {
+        font-size: 6.5em;
+        }
+
+    }
+    p{
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    font-weight: 800;
+    font-size: 1.2rem; 
+    line-height: 1.8rem;
+    color: #333333;
+      a{
+      color: #9f65bc;  
+      }
+    }
+
+
+
+}
+
+
+
 
 .filter{
-    width: 50%;
+    width: 90%;
     margin: 0 auto;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+
     .category-filters p, .social-icons p{display: none;}
-    .category-filters{min-width: 40%;float: left;padding-right: 15px;}
-    .social-icons{min-width: 40%;float: left;}
+    .category-filters{min-width: auto;margin: 0 auto;padding-bottom: 20px;display: table;padding-top: 20px;}
+    .social-icons{min-width: auto;margin: 0 auto;display: table;}
     ul.category-filters li{float: left; margin: 5px 5px 0px 0px;}
-    ul.social-icons li{float: left; margin: 0px 5px 0px 0px;}
+    ul.social-icons li{float: right; margin: 0px 5px 0px 0px;}
     ul.social-icons li a{float: right; margin: 0px 3px 0px 0px;}
+     @include breakpoint(sm) {
+    width: 50%;
+
+     }
 
      @include breakpoint(md) {
       width: 8%;
@@ -56,8 +139,8 @@ $breakpoint-no-query-fallbacks: true;
       padding-bottom: 7px;
       text-align: right;
       margin-bottom: 0px;}
-      .category-filters{max-width: 45%;float: right;padding-right: 0px;padding-bottom: 5px;}
-      .social-icons{max-width: 45%;float: right;clear: both;}
+      .category-filters{width: 45%;float: right;padding-right: 0px;padding-bottom: 5px;}
+      .social-icons{width: 45%;float: right;clear: both;}
         ul.category-filters li{float: right; margin: 5px 0px 5px 0px;}
         ul.social-icons li a{float: right; margin: 0px 0px 5px 0px;}
          

@@ -10,6 +10,11 @@
 
 
 .feature-003{
+		@include backImage ('../images/feature-images/bes-feature.jpg');
+}
+
+
+.feature-004{
 		@include backImage ('../images/heritage-images/mother-of-the-sea.jpg');
 }
 
@@ -22,4 +27,15 @@
 
 .kids-on-campus{
 		@include fullwidthImage ('../images/carousel-images/kids-on-campus.jpg');
+}
+
+
+.header-lemn{
+		@include fullwidthImage ('../images/feature-images/lemn-feature-tn.jpg');
+}
+
+
+
+.header-bes{
+		@include fullwidthImage ('../images/feature-images/bes-feature.jpg');
 }
