@@ -32,11 +32,11 @@
 	background: url($image);
 	background-repeat: no-repeat;
 	background-position: top center;
-	background-size: auto 100%;
+	background-size: cover;
   background-color: $white;
-  background-position: 50%;
-       @include breakpoint(xs) {
-  background-size: 100% auto;
+
+       @include breakpoint(md) {
+  background-size: cover;
   background-position: top center;
        }
 }
@@ -46,7 +46,7 @@
   background: url($image);
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-size: 70%;
+  background-size: 60%;
   background-color: $white;}
 
 @mixin fullwidthImage($image) {
@@ -55,16 +55,16 @@
     font-size: 0;
     width: 100%;
     vertical-align: top;
-    background-size: 150%;
+    background-size: cover;
     background-position:  0 0%;
     background-repeat: no-repeat;
-     @include breakpoint(sm) {
-    background-size: 100%;
+    @include breakpoint(sm) {
+    background-size: cover;
     background-position:  0 0%;
   }
 
      @include breakpoint(lg) {
-    background-size: 120%;
+    background-size: cover;
     background-position:  0 50%;
   }
   }
@@ -93,13 +93,13 @@
 	@include border-radius(0px 0px 5px 5px);
 	display: block;
   font-weight: 600;
-	width: 70px;
+	width: 75px;
 	text-align: center;
 	color: #fff;
 	font-family: $font-primary;
 	text-transform: uppercase;
-	font-size: 0.7rem;
-	padding: 5px 5px 5px 5px;
+	font-size: 0.9rem;
+	padding: 7px 7px 7px 7px;
 }
 
 @mixin filterTag($feature-colour){
@@ -112,8 +112,8 @@
   color: #fff;
   font-family: $font-primary;
   text-transform: uppercase;
-  font-size: 0.6rem;
-  padding: 3px 5px 3px 5px;
+  font-size: 0.9rem;
+  padding: 7px 7px 7px 7px;
   margin-bottom: 3px;
 }
 
