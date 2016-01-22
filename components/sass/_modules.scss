@@ -3,7 +3,7 @@
 
 
 .leadImage{
-	height: 500px;
+	height: 40vh;
 	@include clearspace;
 	@include breakpoint(sm) {
       height: 600px;

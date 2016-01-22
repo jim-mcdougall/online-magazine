@@ -1,19 +1,23 @@
-
-
-
-@include border-box-sizing;
-
-.wrap{
-  margin: 0px 0px;  
-   // @include breakpoint(sm) {
-   //  margin: 0px 20px 0px 20px; 
-   //  }
-   //  @include breakpoint(md) {
-   //  margin: 0px 20px 0px 20px; 
-   //  }
+#wrap{  
+  background: $background-colour!important;
+  margin: 0px 0px; 
+  width: 100%;
+  display: table;
+  position: relative;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  height: 100%;
+  // overflow: hidden;
+  // @include breakpoint(sm) {
+  //  margin: 0px 20px 0px 20px; 
+  //  }
+  //  @include breakpoint(md) {
+  //  margin: 0px 20px 0px 20px; 
+  //  }
 }
 
-.container{
+.container{ 
   margin: 0 auto;
   font-size: 16px;
   width: 100%;
@@ -78,14 +82,14 @@ padding-top: 20px;
 
     h1{
       color: #fff;
-      font-size: 0.7rem;
+      font-size: 1rem;
       font-weight: 400;
-      margin: 0px 0px -15px 0px;
+      margin: 0px 0px -25px 0px;
       text-transform: uppercase;
        @include breakpoint(md) {
-      font-size: 1rem;
-      margin: 0px 0px -25px 0px;
-     
+      font-size: 1.4rem;
+      margin: 0px 0px -40px 0px;
+
         }
     }
     h2{
@@ -94,10 +98,10 @@ padding-top: 20px;
       font-weight: 800;
      
 
-      margin: 0px 0px -8px -6px;
+      margin: 0px 0px -46px -6px;
       @include breakpoint(md) {
         font-size: 5.5em;
-        margin: 0px 0px -12px -6px;
+        margin: 0px 0px -71px -6px;
         }
       @include breakpoint(lg) {
         font-size: 6.2em;
@@ -106,10 +110,10 @@ padding-top: 20px;
     }
     p{
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px 20px 20px 20px;
+    padding: 30px 20px 20px 20px;
     font-weight: 800;
-    font-size: 1.2rem; 
-    line-height: 1.8rem;
+    font-size: 1.8rem; 
+    line-height: 2.6rem;
     color: #333333;
 
       a{
@@ -140,8 +144,7 @@ padding-top: 20px;
     ul.social-icons li{float: right; margin: 0px 5px 0px 0px;}
     ul.social-icons li a{float: right; margin: 0px 3px 0px 0px;}
      @include breakpoint(sm) {
-    width: 50%;
-
+     width: 50%;
      }
 
      @include breakpoint(md) {
@@ -150,17 +153,17 @@ padding-top: 20px;
       float: left;
       .category-filters p, .social-icons p{
         display: block;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         line-height: 0.8rem;
       float: right;
       margin-top: 40px;
       min-width: 65px;
-      padding-bottom: 7px;
+      padding-bottom: 12px;
       text-align: right;
       margin-bottom: 0px;}
       .category-filters{width: 45%;float: right;padding-right: 0px;padding-bottom: 5px;}
       .social-icons{width: 45%;float: right;clear: both;}
-        ul.category-filters li{float: right; margin: 20px 0px 5px 0px;}
+        ul.category-filters li{float: right; margin: 0px 0px 5px 0px;}
         ul.social-icons li a{float: right; margin: 0px 0px 5px 0px;}
          
       }
@@ -222,11 +225,26 @@ padding-top: 20px;
       li{
         text-align: right;
         margin-bottom: 5px;
-        a:hover.contentType-button{   background-color: hsla(100, 100%, 50%, 1);}
-        a.contentType-button__feature{ @include filterTag($feature-colour); }
-        a.contentType-button__opinion{ @include filterTag($opinion-colour); }
-        a.contentType-button__video{ @include filterTag($video-colour); }
-        a.contentType-button__audio{ @include filterTag($audio-colour); }
+  
+         a.contentType-button{ 
+           transition: .25s ease-in-out;
+           -moz-transition:  .25s ease-in-out;
+           -webkit-transition:  .25s ease-in-out;
+          }
+        a.contentType-button__feature{ 
+          @include filterTag($feature-colour);
+
+          &:hover{   background-color: hsla(280, 72%, 50%, 1);}
+        }
+        a.contentType-button__opinion{ @include filterTag($opinion-colour); 
+          &:hover{   background-color: hsla(189, 100%, 67%, 1);}
+        }
+        a.contentType-button__video{ @include filterTag($video-colour); 
+          &:hover{   background-color: hsla(45, 100%, 71%, 1);}
+        }
+        a.contentType-button__audio{ @include filterTag($audio-colour); 
+          // &:hover{   background-color: hsla(280, 72%, 50%, 1);}
+        }
         }
       }
   }
@@ -239,7 +257,7 @@ ul.social-icons li a{
   height:  25px;
   display: block;
   text-align:center;
-  line-height:28px;
+  line-height:23px;
   float: right;
   margin: 0px 5px 3px 20px;
   @include clearfix;
@@ -273,5 +291,18 @@ ul.social-icons li a{
 .socicon-pocket::before{
   font-size: 0.7em;
 }
+
+
+
+/*footer fox*/
+
+.footerContainer .row {
+  padding-left: 0%;
+  @include breakpoint(md) {
+   
+    padding-left: 12%;
+  }
+ }
+
 
 

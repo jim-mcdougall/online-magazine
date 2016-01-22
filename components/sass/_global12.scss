@@ -31,7 +31,7 @@
 		canvas, details, figcaption, figure, 
 		footer, header, hgroup, menu, nav, 
 		section, summary, time, mark, 
-		audio, video 									{margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;}
+		audio, video 									{font-family: "Open Sans",sans-serif;/*<----addition */margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;}
 
 
 	/*------------------------------------------------------------------------------------------------------------*/
@@ -1907,3 +1907,14 @@ textarea { -moz-box-shadow: 0 1px 2px 0 #eee inset; -webkit-box-shadow: 0 1px 2p
 		h2,
 		h3 								{page-break-after: avoid;}
 	}
+
+
+.footerContainer .fourcol.last.awards img { max-width: 200px; height: auto; }
+
+@media only screen and (min-width: 1000px) {
+	.footerContainer .fourcol { width: 20%; }
+	.footerContainer .fourcol.last { width: 20%; float: left; }
+	.footerContainer .fourcol.last.awards { width: 20%; margin-left: 20px; float: left; }
+}
+
+	
