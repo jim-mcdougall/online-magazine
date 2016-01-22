@@ -69,14 +69,19 @@ padding-top: 20px;
   width: 100%;
   position: absolute;
   right: 0;
- 
   bottom: 0;
     
      @include breakpoint(lg) {
      width: 44%;
      position: absolute;
+    
+     //Either
      right: 0;
      margin-right: 10px;
+     //or
+     // left: 0;
+     // margin-left: 120px;
+
      bottom: 0;
      }
 

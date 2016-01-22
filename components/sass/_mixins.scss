@@ -75,7 +75,7 @@
     font-weight: 300;
     font-size: 1.4rem;
     z-index: 9999;   
-    color: $primary-text-colour;
+    color: $primary-text-colour!important;
     margin-top: ($article-title-margintop);
     line-height: 115%;
     background-color: $block-background-color;

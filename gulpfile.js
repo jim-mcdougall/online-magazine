@@ -8,11 +8,7 @@ var gulp = require('gulp'),
 
 var coffeeSources = ['components/coffee/tagline.coffee'];
 var jsSources = [
-  'components/scripts/rclick.js',
-  'components/scripts/pixgrid.js',
-  'components/scripts/tagline.js',
-  'components/scripts/template.js',
-  'components/scripts/masonry.js'
+  'components/scripts/animateonscroll.js'
 ];
 var sassSources = ['components/sass/style.scss'];
 var htmlSources = ['builds/development/*.html'];

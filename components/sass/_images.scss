@@ -1,17 +1,74 @@
-// --------------- Images -------------- // 
+
+.header-leadimage{
+		@include fullwidthImage ('../images/feature-images/feature_lemn-main.jpg');
+
+}
+
+// -------------------- FEATURES -------------------- // 
+
+// --------------- Lemn Sissay Feature -------------- // 
+
+.feature-lemn-sissay_sm{
+		@include backImage ('../images/feature-images/feature_lemn-graffiti-background_lg.jpg');
+}
+.feature-lemn-sissay_lg{
+		@include fullwidthImage ('../images/feature-images/feature_lemn-main.jpg');
+}
+
+
+
+
+// --------------- An adventure through campus -------------- // 
+
+.feature-campus-adventure_sm{
+		@include backImage ('../images/feature-images/feature_kids-on-campus.jpg');
+}
+.feature-campus-adventure_lg{
+		@include fullwidthImage ('../images/feature-images/lemn-feature-main.jpg');
+}
+
+
+
+
+
+// --------------- 2d Materials -------------- // 
+
+.feature-2d-materials_sm{
+		@include backImage ('../images/feature-images/feature_2D-materials_lg.jpg');
+}
+.feature-2d-materials_lg{
+		@include fullwidthImage ('../images/feature-images/feature_2D-materials_lg.jpg');
+}
+
+
+// --------------- BES -------------- // 
+
+.feature-bes_sm{
+		@include backImage ('../images/feature-images/feature_bes-lg.jpg');
+}
+.feature-bes_lg{
+		@include fullwidthImage ('../images/feature-images/feature_bes-lg.jpg');
+}
+
+
+// --------------- GDI -------------- // 
+
+.feature-gdi_sm{
+		@include backImage ('../images/feature-images/feature_gdi-sm.jpg');
+}
+.feature-gdi_lg{
+		@include fullwidthImage ('../images/feature-images/feature_gdi.jpg');
+}
+
+
+
+
+
 
 .feature-001{
 		@include backImage ('../images/feature-images/nurse-feature-tn.jpg');
 }
 
-.feature-002{
-		@include backImage ('../images/feature-images/lemn-feature-tn.jpg');
-}
-
-
-.feature-003{
-		@include backImage ('../images/feature-images/bes-feature.jpg');
-}
 
 
 .feature-004{
@@ -30,13 +87,16 @@
 }
 
 
-.header-lemn{
-		@include fullwidthImage ('../images/feature-images/lemn-feature-tn.jpg');
-}
 
 
 
 .header-bes{
 		@include fullwidthImage ('../images/feature-images/bes-feature.jpg');
+}
+
+
+
+.nancy-rothwell-profile{
+		@include opinionImage ('../images/opinion-images/nancy-rothwell.png');
 }
 
