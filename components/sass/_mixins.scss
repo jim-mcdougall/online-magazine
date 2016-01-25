@@ -42,12 +42,22 @@
 }
 
 // variation for opinion image position bottom
-@mixin opinionImage($image) {
+@mixin opinionImage-sm($image) {
   background: url($image);
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-size: 60%;
+  background-size: 55%;
   background-color: $white;}
+
+// variation for opinion image position bottom
+@mixin opinionImage-lg($image) {
+  background: #D3EBEF url($image) no-repeat scroll 70% bottom / auto 60%;
+  @include breakpoint(md){
+  background: #D3EBEF url($image) no-repeat scroll 80% bottom / auto 80%;
+  }
+  }
+
+
 
 @mixin fullwidthImage($image) {
   background: url($image);

@@ -13,6 +13,16 @@
 	}
 
 
+
+.leadImage-opinion{
+	height: 40vh;
+	@include clearspace;
+	@include breakpoint(sm) {
+      height: 600px;
+      // margin-bottom: 20px;
+  }
+	}
+
 .carousel-text-wrapper{
 	width: 75%;
 	margin: 0px auto;

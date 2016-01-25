@@ -24,7 +24,7 @@
 		@include backImage ('../images/feature-images/feature_kids-on-campus.jpg');
 }
 .feature-campus-adventure_lg{
-		@include fullwidthImage ('../images/feature-images/lemn-feature-main.jpg');
+		@include fullwidthImage ('../images/feature-images/feature_kids-on-campus_lg.jpg');
 }
 
 
@@ -57,7 +57,57 @@
 		@include backImage ('../images/feature-images/feature_gdi-sm.jpg');
 }
 .feature-gdi_lg{
-		@include fullwidthImage ('../images/feature-images/feature_gdi.jpg');
+		@include fullwidthImage ('../images/feature-images/feature_gdi-sm.jpg');
+}
+
+
+
+
+// --------------- Nursing -------------- // 
+
+.feature-nursing_sm{
+		@include backImage ('../images/feature-images/feature_nursing-lg.jpg');
+}
+.feature-nursing_lg{
+		@include fullwidthImage ('../images/feature-images/feature_nursing-lg.jpg');
+}
+
+
+
+// --------------- OPINION -------------- // 
+
+
+// --------------- Tanja Muller -------------- // 
+
+.opinion-tanja-muller-sm {
+		@include opinionImage-sm ('../images/opinion-images/opinion_tanja-muller-sm.png');
+}
+.opinion-tanja-muller_lg{
+		@include opinionImage-lg ('../images/opinion-images/opinion_tanja-muller-sm.png');
+}
+
+
+
+
+
+// --------------- kevin-anderson -------------- // 
+
+.opinion-kevin-anderson-sm {
+		@include opinionImage-sm ('../images/opinion-images/opinion_kevin-anderson-sm.png');
+}
+.opinion-kevin-anderson_lg{
+		@include opinionImage-lg ('../images/opinion-images/opinion_kevin-anderson-sm.png');
+}
+
+
+
+// --------------- Clarissa Giebel -------------- // 
+
+.opinion-clarissa-giebel-sm {
+		@include opinionImage-sm ('../images/opinion-images/opinion_clarissa-giebel-sm.png');
+}
+.opinion-clarissa-giebel_lg{
+		@include opinionImage-lg ('../images/opinion-images/opinion_clarissa-giebel-sm.png');
 }
 
 
@@ -65,26 +115,42 @@
 
 
 
-.feature-001{
-		@include backImage ('../images/feature-images/nurse-feature-tn.jpg');
+
+
+// --------------- nancy-rothwell -------------- // 
+
+.nancy-rothwell-sm {
+		@include opinionImage-sm ('../images/opinion-images/nancy-rothwell.png');
+}
+.nancy-rothwell_lg{
+		@include opinionImage-lg ('../images/opinion-images/nancy-rothwell.png');
 }
 
 
 
-.feature-004{
+
+
+
+
+
+
+
+
+
+
+// --------------- Heritage Picture feature -------------- // 
+
+.feature_mother-of-the-sea_sm {
 		@include backImage ('../images/heritage-images/mother-of-the-sea.jpg');
 }
-
-
-.opinion-001{
-		@include opinionImage ('../images/opinion-images/opinion-001.png');
+.feature_mother-of-the-sea_lg{
+		@include fullwidthImage ('../images/heritage-images/mother-of-the-sea.jpg');
 }
 
 
 
-.kids-on-campus{
-		@include fullwidthImage ('../images/carousel-images/kids-on-campus.jpg');
-}
+
+
 
 
 
@@ -94,9 +160,4 @@
 		@include fullwidthImage ('../images/feature-images/bes-feature.jpg');
 }
 
-
-
-.nancy-rothwell-profile{
-		@include opinionImage ('../images/opinion-images/nancy-rothwell.png');
-}
 
