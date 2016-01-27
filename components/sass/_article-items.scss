@@ -219,8 +219,13 @@ $block-background-color: $white;
   h2{ 
   @include article-title(100%, 0%, none);//width & padding top  
   background-color: none!important;
+  padding: 5% 5% 3.5% 5%!important;
   } 
-
+  h3{
+  @include author-title(100%, 0%, none);//width & padding top  
+  background-color: none!important;
+  display: none;
+  }
 } //masonry__item--one-up
 
 
@@ -236,7 +241,7 @@ $block-background-color: $white;
   float: left;
   }
 }
-.article-container a{
+.article-container .item-container_section a{
   width: 100%; 
   display: block;
   float: left;
