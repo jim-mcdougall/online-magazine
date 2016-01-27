@@ -4,6 +4,7 @@
 		height: 600px;
 		@include breakpoint(md){
 		@include fullwidthImage ('../images/feature-images/feature_lemn-main.jpg');
+		background-position: 0px 90%!important;
 	}
 }
 

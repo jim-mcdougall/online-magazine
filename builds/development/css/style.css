@@ -602,6 +602,35 @@ q {
     text-align: center;
     margin: 0px auto; }
 
+.content-filter {
+  border-bottom: 2px #000 solid;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  width: 99%;
+  display: block;
+  position: relative; }
+  .content-filter a#back-button {
+    position: absolute;
+    left: 0;
+    padding: 0px;
+    margin: 0px;
+    background: none;
+    padding: 0px;
+    color: #fff;
+    margin: 0px;
+    position: absolute;
+    top: 10px;
+    left: 43px;
+    font-style: normal;
+    font-weight: 800; }
+    .content-filter a#back-button span::before {
+      content: url("../images/icons/back-icon.png");
+      width: 20px;
+      height: 0px;
+      display: block;
+      background-repeat: no-repeat;
+      margin-right: -20px; }
+
 .item-tag--feature {
   border-top: 3px solid #751aa3; }
   .item-tag--feature .categorytag {
@@ -889,7 +918,8 @@ ul.social-icons li a {
       background-size: 100%;
       vertical-align: top;
       background-position: 0 0;
-      background-repeat: no-repeat; } }
+      background-repeat: no-repeat;
+      background-position: 0px 90% !important; } }
   @media (min-width: 992px) and (min-width: 730px) {
     .header-leadimage {
       background-size: cover;
