@@ -50,30 +50,31 @@
   background-color: $white;}
 
 // variation for opinion image position bottom
-@mixin opinionImage-lg($image) {
-  background: #D3EBEF url($image) no-repeat scroll 70% bottom / auto 60%;
+@mixin forewordImage-lg($image) {
+  background: #D3EBEF url($image) no-repeat scroll 85% bottom / auto 90%;
   @include breakpoint(md){
   background: #D3EBEF url($image) no-repeat scroll 80% bottom / auto 80%;
   }
   }
 
+// variation for opinion image position bottom
+@mixin opinionImage-lg($image) {
+  background: #D3EBEF url($image) no-repeat scroll 70% bottom / auto 50%;
+  @include breakpoint(md){
+  background: #D3EBEF url($image) no-repeat scroll 80% bottom / auto 70%;
+  }
+  }
 
 
 @mixin fullwidthImage($image) {
   background: url($image);
       display: inline-block;
     font-size: 0;
-    width: 100%;
+    width: 100%;background-size: cover;
     vertical-align: top;
-    background-size: cover;
-    background-position:  0 0%;
+    background-position:  0 0;
     background-repeat: no-repeat;
-    @include breakpoint(sm) {
-    background-size: cover;
-    background-position:  0 0%;
-  }
-
-     @include breakpoint(lg) {
+    @include breakpoint(md) {
     background-size: cover;
     background-position:  0 50%;
   }
@@ -136,6 +137,57 @@
     filter: alpha(opacity=40); /* For IE8 and earlier */ 
     transition: 0.5s ease;
     -webkit-filter: grayscale(0.2);
-  filter: grayscale(0.2);
+    filter: grayscale(0.2);
 
 }
+
+@mixin title-h1h2{
+
+      h1{
+      color: $primary-text-colour!important;
+      width: 200px;
+      margin: 0px auto; 
+      text-align: center;
+      line-height: 160%;
+      font-weight: 800;
+      display: inline;
+        @include breakpoint(sm){  
+        color: $primary-text-colour!important;
+        width: 200px;
+        margin: 0px auto; 
+        text-align: center;
+        line-height: 160%;
+        font-weight: 800;
+        display: inline;
+        }
+     }
+
+     span{
+        font-size: 2.5rem;
+        padding: 10px;
+        background-color: #fff;
+        line-height: 180%;
+        display: inline;padding: 0.8rem 1.2rem;
+        box-decoration-break: clone;
+          @include breakpoint(sm){  
+          padding: 10px;
+          background-color: #fff;
+          line-height: 150%;
+          font-size: 4.2rem;display: inline;padding: 0.8rem 1.2rem;
+          box-decoration-break: clone;
+          }
+      }
+
+     h2{
+      color: #fff;
+      width: 400px;
+      padding: 25px 10px 10px 10px;
+      color: $primary-text-colour!important;
+      line-height: 130%;
+      font-size: 1rem;
+      text-align: center;
+     }
+}
+
+
+

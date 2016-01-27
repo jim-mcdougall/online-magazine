@@ -1,8 +1,25 @@
 
 .header-leadimage{
+		background-image: none;
+		height: 600px;
+		@include breakpoint(md){
 		@include fullwidthImage ('../images/feature-images/feature_lemn-main.jpg');
-
+	}
 }
+
+
+.header-leadimage-mobile{
+		height: 400px;
+ 		background-size: cover !important;
+		@include fullwidthImage ('../images/feature-images/feature_lemn-main.jpg');
+		display: block;
+			@include breakpoint(md){
+			display: none;
+			}
+}
+
+
+
 
 // -------------------- FEATURES -------------------- // 
 
@@ -123,7 +140,7 @@
 		@include opinionImage-sm ('../images/opinion-images/nancy-rothwell.png');
 }
 .nancy-rothwell_lg{
-		@include opinionImage-lg ('../images/opinion-images/nancy-rothwell.png');
+		@include forewordImage-lg ('../images/opinion-images/nancy-rothwell.png');
 }
 
 

@@ -293,12 +293,23 @@
 
       </header>
 
+
+        <!-- Breadcrumb -->
+        <nav class="row breadcrumbNav showAtDesktop">
+
+        <!-- navigation object : Breadcrumbs -->
+<ul itemprop="breadcrumb"><li><a href="/">Home</a></li><li><a href="/discover/">Discover</a></li><li><a href="/discover/magazine/">The University of Manchester Magazine</a></li></ul>
+
+                            </nav>
+        <!--END Breadcrumb-->
+
+        
+
       <div class="leadImage feature-bes_lg">
 
-           <span class="animated fadeInDown" style="border-right: 1px solid #fff; height: 30%;display: block;width: 50%;clear:both;"></span>
-
+        
         <header class="article-title animated fadeInDown">
-        <h1><span>Charting a shifting polictical landscape</span></h1>
+        <h1><span>Charting a shifting political landscape</span></h1>
         </header>
 
      </div>
@@ -366,9 +377,8 @@ pundits in the months that followed: what went so wrong for Labour?</p>
 
 <picture class="article-image-container">
 
-  <img class="article-image--fullwidth animatedOnScroll" src="../images/feature-images/feature_bes-6-reasons.svg" alt="">
+  <img class="article-image--fullwidth animatedOnScroll" src="../images/feature-images/feature_bes-6-reasons.png" alt="">
 
-  <p>Photograph: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
 
 </picture>
 
@@ -380,6 +390,10 @@ Professor Green. </p>
 <p>“Much was said about the threat of the SNP and how Labour might deal with them if it were in a position to form a government,” she explains. “But we find little evidence so far that expectations of SNP influence contributed to the Conservatives’ victory.”
 The second is perhaps more surprising: their analysis suggests there is very little to the argument that Labour was too left wing to attract voters. Yet, at the same time, there is no evidence to support the argument that Labour was not left wing enough either. 
 “Voters would back Labour whether it was seen as a party on the far left, or just to the left of centre. But whatever Labour’s left-right position, it was unlikely to win in 2015,” she continues. </p>
+
+
+
+<div class="videowrapper"><iframe src="https://www.youtube.com/embed/BeeW4aXAT_8" frameborder="0" allowfullscreen></iframe></div>
 
 <p>“However, our analysis should not be interpreted as meaning that Labour should be more left wing.</p>
 
@@ -411,8 +425,6 @@ two-party system.”</p>
 <p>“It’s a stark portrayal of how British political attitudes have changed so much over the years. Only the BES is uniquely placed to explain how and why. And that, in a nutshell, explains why it’s the most important study of electoral behaviour in the UK and beyond.”</p>
 
 
-<div class="videowrapper"><iframe src="https://www.youtube.com/embed/BeeW4aXAT_8" frameborder="0" allowfullscreen></iframe></div>
-
 
 
 </article>
@@ -420,36 +432,51 @@ two-party system.”</p>
 
 </div> <!-- container close -->
 
+
 <div class="content-divider"><p>Recent features </p></div>
 
     <div class="article-container ">
 
        <div class="item-container_section outer-fourbytwo">
-               <article class="article-item feature-002 item-tag--feature inner-onebytwo">
-                <p class="categorytag">Feature</p>
-                <h2><span>Student</span> / Lorem ipsum dolor sit amet, consectetur adipisicing ipsum elit.</h2>
-              </article>
+              
 
-               <article class="article-item feature-001 item-tag--feature inner-onebytwo">
+           
+            <a href="../features/feature_nursing.html">
+               <article class="article-item feature-nursing_sm item-tag--feature inner-onebytwo">
                 <p class="categorytag">Feature</p>
-                <h2><span>Student</span> / Lorem ipsum dolor sit amet, consectetur adipisicing ipsum elit.</h2>
+                <h2><span>Healthcare</span> / Pioneering tomorrow’s patient care</h2>
               </article>
+            </a>
 
-               <article class="article-item feature-003 item-tag--feature inner-onebytwo">
+                  <a href="../features/feature_2d-materials.html">
+          <article class="article-item feature-2d-materials_sm item-tag--feature inner-onebytwo">
                 <p class="categorytag">Feature</p>
-                <h2><span>Student</span> / Lorem ipsum dolor sit amet, consectetur adipisicing ipsum elit.</h2>
+                <h2><span>Materials</span> / Manchester is developing advanced materials that are set to change the world</h2>
               </article>
-  
-               <article class="article-item feature-004 item-tag--feature inner-onebytwo">
+                </a>
+
+ 
+          <a href="../picture-features/feature_mother-of-the-sea.html">
+            <article class="article-item feature_mother-of-the-sea_sm item-tag--feature inner-onebytwo">
+                <p class="categorytag">Heritage</p>
+                <h2><span>Mother of the Sea</span> / Research has the power to make lives better – sometimes for an entire nation.</h2>
+              </article>
+            </a>  
+
+           
+        
+            <a href="../features/feature_lemn-sissay.html">
+              <article class="article-item feature-lemn-sissay_sm item-tag--feature inner-onebytwo">
                 <p class="categorytag">Feature</p>
-                <h2><span>Student</span> / Lorem ipsum dolor sit amet, consectetur adipisicing ipsum elit.</h2>
+                <h2><span>Spotlight</span> / Inspire and be inspired. An interview with Lemn Sissay. </h2>
               </article>
+            </a>
+
+
        </div>
 
 
-
     </div>
-
 </div> <!-- wrap close -->
 
        
@@ -546,7 +573,7 @@ two-party system.”</p>
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
-       <script>
+              <script>
   $(window).scroll(function() {
     $('.animatedOnScroll').each(function(){
     var imagePos = $(this).offset().top;
@@ -556,8 +583,6 @@ two-party system.”</p>
         $(this).addClass("slideRight");
       }
     });
-  });
+  }).scroll();
 </script>
-      <script src=js/script.js></script>
-    </body>
 </html>

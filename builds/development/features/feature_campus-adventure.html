@@ -293,11 +293,23 @@
 
       </header>
 
+
+        <!-- Breadcrumb -->
+        <nav class="row breadcrumbNav showAtDesktop">
+
+        <!-- navigation object : Breadcrumbs -->
+<ul itemprop="breadcrumb"><li><a href="/">Home</a></li><li><a href="/discover/">Discover</a></li><li><a href="/discover/magazine/">The University of Manchester Magazine</a></li></ul>
+
+                            </nav>
+        <!--END Breadcrumb-->
+
+        
+      
+
       <div class="leadImage feature-campus-adventure_lg">
 
-           <span class="animated fadeInDown" style="border-right: 1px solid #fff; height: 50%;display: block;width: 50%;clear:both;"></span>
 
-        <header class="article-title animated fadeInDown">
+        <header class="article-title-right animated fadeInDown">
           
         
         <h1><span>An inspiring adventure on campus</span></h1>
@@ -411,27 +423,39 @@ Stephanie Lee, Head of Student Recruitment (Widening Participation and Outreach)
     <div class="article-container ">
 
        <div class="item-container_section outer-fourbytwo">
-               <article class="article-item feature-002 item-tag--feature inner-onebytwo">
+              
+            
+            <a href="../features/feature_lemn-sissay.html">
+              <article class="article-item feature-lemn-sissay_sm item-tag--feature inner-onebytwo">
                 <p class="categorytag">Feature</p>
-                <h2><span>Student</span> / Lorem ipsum dolor sit amet, consectetur adipisicing ipsum elit.</h2>
+                <h2><span>Spotlight</span> / Inspire and be inspired. An interview with Lemn Sissay. </h2>
               </article>
+            </a>
 
-               <article class="article-item feature-001 item-tag--feature inner-onebytwo">
-                <p class="categorytag">Feature</p>
-                <h2><span>Student</span> / Lorem ipsum dolor sit amet, consectetur adipisicing ipsum elit.</h2>
-              </article>
 
-               <article class="article-item feature-003 item-tag--feature inner-onebytwo">
+              <a href="../features/feature_2d-materials.html">
+          <article class="article-item feature-2d-materials_sm item-tag--feature inner-onebytwo">
                 <p class="categorytag">Feature</p>
-                <h2><span>Student</span> / Lorem ipsum dolor sit amet, consectetur adipisicing ipsum elit.</h2>
+                <h2><span>Materials</span> / Manchester is developing advanced materials that are set to change the world</h2>
               </article>
-  
-               <article class="article-item feature-004 item-tag--feature inner-onebytwo">
-                <p class="categorytag">Feature</p>
-                <h2><span>Student</span> / Lorem ipsum dolor sit amet, consectetur adipisicing ipsum elit.</h2>
-              </article>
-       </div>
+                </a>
 
+          
+            <a href="../features/feature_nursing.html">
+               <article class="article-item feature-nursing_sm item-tag--feature inner-onebytwo">
+                <p class="categorytag">Feature</p>
+                <h2><span>Healthcare</span> / Pioneering tomorrow’s patient care</h2>
+              </article>
+            </a>
+    
+            <a href="../picture-features/feature_mother-of-the-sea.html">
+            <article class="article-item feature_mother-of-the-sea_sm item-tag--feature inner-onebytwo">
+                <p class="categorytag">Heritage</p>
+                <h2><span>Mother of the Sea</span> / Research has the power to make lives better – sometimes for an entire nation.</h2>
+              </article>
+            </a>  
+
+           </div>
 
 
     </div>
@@ -532,7 +556,7 @@ Stephanie Lee, Head of Student Recruitment (Widening Participation and Outreach)
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
-     <script>
+              <script>
   $(window).scroll(function() {
     $('.animatedOnScroll').each(function(){
     var imagePos = $(this).offset().top;
@@ -542,10 +566,7 @@ Stephanie Lee, Head of Student Recruitment (Widening Participation and Outreach)
         $(this).addClass("slideRight");
       }
     });
-  });</script>
-
-       <script type="text/javascript" src="slick/slick.min.js"></script>
-
-      <script src=js/script.js></script>
+  }).scroll();
+</script>
     </body>
 </html>

@@ -293,11 +293,25 @@
 
       </header>
 
+
+
+        <!-- Breadcrumb -->
+        <nav class="row breadcrumbNav showAtDesktop">
+
+        <!-- navigation object : Breadcrumbs -->
+<ul itemprop="breadcrumb"><li><a href="/">Home</a></li><li><a href="/discover/">Discover</a></li><li><a href="/discover/magazine/">The University of Manchester Magazine</a></li></ul>
+
+                            </nav>
+        <!--END Breadcrumb-->
+
+        
+
+
+
       <div class="leadImage feature-gdi_lg">
 
-           <span class="animated fadeInDown" style="border-right: 1px solid #fff; height: 30%;display: block;width: 50%;clear:both;"></span>
-
-        <header class="article-title animated fadeInDown">
+     
+        <header class="article-title-left animated fadeInDown">
         <h1><span>One globe, a world of solutions</span></h1>
         </header>
 
@@ -319,7 +333,7 @@
        
       <div class="article-details"> 
        <p id="datelink">1 December 2015</p>
-       <p id="author">Words by Mike Addelman</p>
+       <p id="author">Words by Deborah Linton</p>
       </div>
 
         <ul class="social-icons" id="social-icons--article-top">
@@ -345,6 +359,9 @@
 
 <p>That’s why the University has announced a major new centre, the Global Development Institute (GDI). The Institute will hold the promotion of social justice – the fight for equality in rights and opportunities – at its heart. It will unite the strengths of the existing Institute for Development Policy and Management (IDPM) and the Brooks World Poverty Institute (BWPI) – research hubs with a history of making a difference to real lives, from promoting young people’s well-being in Tanzania to helping Cadbury to launch 
 an initiative to support cocoa growers.</p>
+
+
+<div class="videowrapper"><iframe src="https://www.youtube.com/embed/B9FDwZ8VvTk" frameborder="0" allowfullscreen></iframe></div>
 
 
 <p>When it launches in early 2016, the GDI will become the largest provider of development studies research and postgraduate education 
@@ -413,8 +430,6 @@ resources to go around.</p>
 
 
 
-<div class="videowrapper"><iframe src="https://www.youtube.com/embed/B9FDwZ8VvTk" frameborder="0" allowfullscreen></iframe></div>
-
 
 
 </article>
@@ -422,32 +437,47 @@ resources to go around.</p>
 
 </div> <!-- container close -->
 
+
 <div class="content-divider"><p>Recent features </p></div>
 
     <div class="article-container ">
 
        <div class="item-container_section outer-fourbytwo">
-               <article class="article-item feature-002 item-tag--feature inner-onebytwo">
-                <p class="categorytag">Feature</p>
-                <h2><span>Student</span> / Lorem ipsum dolor sit amet, consectetur adipisicing ipsum elit.</h2>
-              </article>
+                  
 
-               <article class="article-item feature-001 item-tag--feature inner-onebytwo">
+                
+            <a href="../features/feature_lemn-sissay.html">
+              <article class="article-item feature-lemn-sissay_sm item-tag--feature inner-onebytwo">
                 <p class="categorytag">Feature</p>
-                <h2><span>Student</span> / Lorem ipsum dolor sit amet, consectetur adipisicing ipsum elit.</h2>
+                <h2><span>Spotlight</span> / Inspire and be inspired. An interview with Lemn Sissay. </h2>
               </article>
+            </a>
 
-               <article class="article-item feature-003 item-tag--feature inner-onebytwo">
+
+                          <a href="../features/feature_bes.html">
+               <article class="article-item feature-bes_sm item-tag--feature inner-onebytwo">
                 <p class="categorytag">Feature</p>
-                <h2><span>Student</span> / Lorem ipsum dolor sit amet, consectetur adipisicing ipsum elit.</h2>
-              </article>
-  
-               <article class="article-item feature-004 item-tag--feature inner-onebytwo">
+                <h2><span>Politics</span> / Charting a shifting political landscape with the BES</h2>
+               </article>
+              </a>
+
+            
+              <a href="../features/feature_2d-materials.html">
+          <article class="article-item feature-2d-materials_sm item-tag--feature inner-onebytwo">
                 <p class="categorytag">Feature</p>
-                <h2><span>Student</span> / Lorem ipsum dolor sit amet, consectetur adipisicing ipsum elit.</h2>
+                <h2><span>Materials</span> / Manchester is developing advanced materials that are set to change the world</h2>
               </article>
+                </a>
+
+                <a href="../picture-features/feature_mother-of-the-sea.html">
+            <article class="article-item feature_mother-of-the-sea_sm item-tag--feature inner-onebytwo">
+                <p class="categorytag">Heritage</p>
+                <h2><span>Mother of the Sea</span> / Research has the power to make lives better – sometimes for an entire nation.</h2>
+              </article>
+            </a>  
+          
+
        </div>
-
 
 
     </div>
@@ -558,8 +588,8 @@ resources to go around.</p>
         $(this).addClass("slideRight");
       }
     });
-  });
+  }).scroll();
 </script>
-      <script src=js/script.js></script>
+
     </body>
 </html>

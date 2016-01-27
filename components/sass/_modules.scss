@@ -5,9 +5,11 @@
 .leadImage{
 	height: 40vh;
 	@include clearspace;
+	position: relative;
 	@include breakpoint(sm) {
       height: 600px;
       float: left;
+      position: relative;
       // margin-bottom: 20px;
   }
 	}
@@ -15,11 +17,15 @@
 
 
 .leadImage-opinion{
-	height: 40vh;
+	height: 70vh;
 	@include clearspace;
+	position: relative;
 	@include breakpoint(sm) {
       height: 600px;
+      width: 100%;
       // margin-bottom: 20px;
+      float: left;
+      position: relative;
   }
 	}
 

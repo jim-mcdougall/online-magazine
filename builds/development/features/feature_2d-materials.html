@@ -293,9 +293,20 @@
 
       </header>
 
+
+        <!-- Breadcrumb -->
+        <nav class="row breadcrumbNav showAtDesktop">
+
+        <!-- navigation object : Breadcrumbs -->
+<ul itemprop="breadcrumb"><li><a href="/">Home</a></li><li><a href="/discover/">Discover</a></li><li><a href="/discover/magazine/">The University of Manchester Magazine</a></li></ul>
+
+                            </nav>
+        <!--END Breadcrumb-->
+
+        
+
       <div class="leadImage feature-2d-materials_lg">
 
-           <span class="animated fadeInDown" style="border-right: 1px solid #fff; height: 30%;display: block;width: 50%;clear:both;"></span>
 
         <header class="article-title slideDown">
           
@@ -376,8 +387,8 @@ For physicists, building a heterostructure is surprisingly simple. By layering s
 
 
 <picture>
-  <img class="article-image animatedOnScroll" src="../images/feature-images/feature_2D-materials_chinese-president-visit.jpg" alt="">
-  <p>Photograph: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+  <img class="article-image animatedOnScroll" src="../images/feature-images/feature_2D-materials_chinese-president-visit.jpg" alt="Chinese president at the National Graphene Institute">
+  <p>China’s President Xi Jinping visits the National Graphene Institute</p>
 </picture>
 
 
@@ -399,6 +410,9 @@ Research will comprise of 14 key areas, including graphene and 2D materials. The
 
       
 
+<div class="videowrapper"><iframe src="https://www.youtube.com/embed/rdj0E_ZZXNk" frameborder="0" allowfullscreen></iframe></div>
+
+
 
 
 
@@ -414,27 +428,41 @@ Research will comprise of 14 key areas, including graphene and 2D materials. The
     <div class="article-container ">
 
        <div class="item-container_section outer-fourbytwo">
-               <article class="article-item feature-002 item-tag--feature inner-onebytwo">
-                <p class="categorytag">Feature</p>
-                <h2><span>Student</span> / Lorem ipsum dolor sit amet, consectetur adipisicing ipsum elit.</h2>
-              </article>
+              
 
-               <article class="article-item feature-001 item-tag--feature inner-onebytwo">
+              <a href="../features/feature_bes.html">
+               <article class="article-item feature-bes_sm item-tag--feature inner-onebytwo">
                 <p class="categorytag">Feature</p>
-                <h2><span>Student</span> / Lorem ipsum dolor sit amet, consectetur adipisicing ipsum elit.</h2>
+                <h2><span>Politics</span> / Charting a shifting political landscape with the BES</h2>
+               </article>
+              </a>
+            
+     
+              <a href="../features/feature_gdi.html">
+            <article class="article-item item-tag--feature feature-gdi_sm inner-onebytwo">
+                <p class="categorytag">Feature</p>
+                <h2><span>Global inequality</span> / An introduction to the new Institute tackling global inequalities</h2>
               </article>
+              </a>
+    
+         
+           
+            <a href="../features/feature_lemn-sissay.html">
+              <article class="article-item feature-lemn-sissay_sm item-tag--feature inner-onebytwo">
+                <p class="categorytag">Feature</p>
+                <h2><span>Spotlight</span> / Inspire and be inspired. An interview with Lemn Sissay</h2>
+              </article>
+            </a>
 
-               <article class="article-item feature-003 item-tag--feature inner-onebytwo">
+ <a href="../features/feature_nursing.html">
+               <article class="article-item feature-nursing_sm item-tag--feature inner-onebytwo">
                 <p class="categorytag">Feature</p>
-                <h2><span>Student</span> / Lorem ipsum dolor sit amet, consectetur adipisicing ipsum elit.</h2>
+                <h2><span>Healthcare</span> / Pioneering tomorrow’s patient care</h2>
               </article>
-  
-               <article class="article-item feature-004 item-tag--feature inner-onebytwo">
-                <p class="categorytag">Feature</p>
-                <h2><span>Student</span> / Lorem ipsum dolor sit amet, consectetur adipisicing ipsum elit.</h2>
-              </article>
+            </a>
+     
+
        </div>
-
 
 
     </div>
@@ -545,11 +573,7 @@ Research will comprise of 14 key areas, including graphene and 2D materials. The
         $(this).addClass("slideRight");
       }
     });
-  });
+  }).scroll();
 </script>
-
-       <script type="text/javascript" src="slick/slick.min.js"></script>
-
-      <script src=js/script.js></script>
     </body>
 </html>

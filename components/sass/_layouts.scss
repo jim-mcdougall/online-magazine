@@ -1,3 +1,27 @@
+// FIXES
+
+.breadcrumbNav{
+  border-bottom: none!important;
+}
+
+#wrap-home{  
+  background: $background-colour!important;
+  margin: 0px 0px; 
+  width: 100%;
+  display: table;
+  position: relative;
+  width: 100%;
+  margin: 0px auto;
+  padding: 20px 0px 0px 0px;
+  height: 100%;
+  // overflow: hidden;
+  // @include breakpoint(sm) {
+  //  margin: 0px 20px 0px 20px; 
+  //  }
+  //  @include breakpoint(md) {
+  //  margin: 0px 20px 0px 20px; 
+  //  }
+}
 #wrap{  
   background: $background-colour!important;
   margin: 0px 0px; 
@@ -6,7 +30,7 @@
   position: relative;
   width: 100%;
   margin: 0px auto;
-  padding: 0px;
+  padding: 0px 0px 0px 0px;
   height: 100%;
   // overflow: hidden;
   // @include breakpoint(sm) {
@@ -34,28 +58,20 @@
   margin: 0 auto;
   font-size: 16px;
   width: 100%;
- height: 100%;
- max-width: 1200px;
+  height: 250px;
+  max-width: 1200px;
   position: relative;
 
-      // height: 500px;
-
-  @include breakpoint(sm) {
-      width: 100%;
-      position: relative;
-      height: 100%;
-
-  }
   @include breakpoint(md) {
       width: 100%;
       position: relative;
-      height: 100%;
+      height: 600px;
 
   }
 }
 
 .magazine-logo{
-background: rgba(000,000,000,0.2);
+// background: rgba(000,000,000,0.2);
 padding-left: 20px;
 padding-top: 20px;
 @include breakpoint(md) {
@@ -67,16 +83,16 @@ padding-top: 20px;
 .home-intro-container{
 
   width: 100%;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-    
-     @include breakpoint(lg) {
+  float: left;
+  background: rgba(0, 0, 0, 1) none repeat scroll 0% 0%;
+
+     @include breakpoint(md) {
      width: 44%;
      position: absolute;
-    
+     background: rgba(0, 0, 0, 0.6) none repeat scroll 0% 0%;
      //Either
      right: 0;
+     bottom: 0;
      margin-right: 10px;
      //or
      // left: 0;
@@ -114,12 +130,12 @@ padding-top: 20px;
 
     }
     p{
-    background-color: rgba(255, 255, 255, 0.9);
+    // background-color: rgba(255, 255, 255, 0.9);
     padding: 30px 20px 20px 20px;
     font-weight: 800;
     font-size: 1.8rem; 
     line-height: 2.6rem;
-    color: #333333;
+    color: #fff;
 
       a{
       color: #9f65bc;  
@@ -144,7 +160,7 @@ padding-top: 20px;
   // padding-bottom: 20px;
     .category-filters p, .social-icons p{display: none;}
     .category-filters{min-width: auto;margin: 0 auto;padding-bottom: 20px;display: table;padding-top: 20px;}
-    .social-icons{min-width: auto;margin: 0 auto;display: table;}
+    .social-icons{min-width: auto;margin: 0 auto;display: table;display: none;}
     ul.category-filters li{float: left; margin: 5px 5px 0px 0px;}
     ul.social-icons li{float: right; margin: 0px 5px 0px 0px;}
     ul.social-icons li a{float: right; margin: 0px 3px 0px 0px;}
@@ -215,6 +231,25 @@ padding-top: 20px;
     }
   }
 
+.item-tag--picture{
+  border-top: 3px solid $picture-colour;
+    .categorytag{
+    @include categorytag($picture-colour);
+      text-decoration: none!important;
+
+    }
+  }
+
+.item-tag--foreword{
+  border-top: 3px solid $foreword-colour;
+    .categorytag{
+    @include categorytag($foreword-colour);
+      text-decoration: none!important;
+
+    }
+  }
+
+
 
 
 //--------- Contains filter tags e.g. feature/opinion etc ------------
@@ -244,17 +279,22 @@ padding-top: 20px;
         a.contentType-button__opinion{ @include filterTag($opinion-colour); 
           &:hover{   background-color: hsla(189, 100%, 67%, 1);}
         }
-        a.contentType-button__video{ @include filterTag($video-colour); 
+        a.contentType-button__video{ display: none; @include filterTag($video-colour); 
           &:hover{   background-color: hsla(45, 100%, 71%, 1);}
         }
         a.contentType-button__audio{ @include filterTag($audio-colour); 
           // &:hover{   background-color: hsla(280, 72%, 50%, 1);}
         }
+         a.contentType-button__picture{ @include filterTag($picture-colour); 
+          &:hover{   background-color: hsla(24, 69%, 50%, 1);}
+        }
+
         }
       }
   }
 
 ul.social-icons li a{
+  
   text-decoration: none;
   color: #fff;
   border-radius: 50%;

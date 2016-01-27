@@ -160,13 +160,18 @@ $block-background-color: $white;
     .categorytag{
     margin: 0px 90px;}
     h2{ 
-    
+    @include article-title(100%, 60%,$block-background-color); //width & padding top
     position: absolute;
-    bottom: 00px;
-    color: $primary-text-colour;
-    @include article-title(50%, 60%,$block-background-color); //width & padding top
-    // margin-left: -3px;
-    font-size: 2rem; }
+      bottom: 0px;
+      @include breakpoint(sm){
+      position: absolute;
+      bottom: 0px;
+      color: $primary-text-colour;
+      @include article-title(50%, 60%,$block-background-color); //width & padding top
+      // margin-left: -3px;
+      font-size: 2rem; 
+      }
+  }
 }
 
 
@@ -231,12 +236,15 @@ $block-background-color: $white;
   float: left;
   }
 }
-.article-container .inner-onebytwo{
+.article-container a{
   width: 100%; 
+  display: block;
+  float: left;
+  margin-bottom: 15px;
   @include breakpoint(xs) {
   height: 245px;
   &:nth-child(even) {margin-right: 0%;}
-  &:nth-child(odd) {margin-right: 2%;}
+  &:nth-child(odd) {margin-right:  2%;}
   width: 49%;
  }
   @include breakpoint(sm) {
@@ -244,4 +252,41 @@ $block-background-color: $white;
   margin-right: 1%;
   }
 }
+
+
+
+
+
+
+
+// //article specific
+
+// .article-container .outer-fourbytwo{
+//   float: left;width: 100%;
+//   @include breakpoint(md) {
+//   width: 100%;
+//   float: left;
+//   }
+// }
+// .article-container a .inner-onebytwo, .article-container a .inner-onebytwo--opinion{
+//   width: 100%; 
+
+// }
+// .article-container a {
+//   display: block;
+//   height: 245px; 
+//   width: 49%;
+//   float: left;
+//   margin-bottom: 15px;
+//    @include breakpoint(sm) {
+//   width: 24%;
+//     &:nth-child(even) {margin-right: 0%;}
+//   &:nth-child(odd) {margin-right:  2%;}
+// }
+// }
+//   @include breakpoint(xs) {
+//   height: 245px;
+//   width: 100%;
+//  }
+
 
