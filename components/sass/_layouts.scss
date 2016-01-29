@@ -65,7 +65,7 @@
   @include breakpoint(md) {
       width: 100%;
       position: relative;
-      height: 600px;
+      height: 500px;
 
   }
 }
@@ -84,12 +84,12 @@ padding-top: 20px;
 
   width: 100%;
   float: left;
-  background: rgba(0, 0, 0, 1) none repeat scroll 0% 0%;
+  background: rgba(255, 255, 255, 1) none repeat scroll 0% 0%;
 
      @include breakpoint(md) {
      width: 44%;
      position: absolute;
-     background: rgba(0, 0, 0, 0.6) none repeat scroll 0% 0%;
+     background: rgba(255, 255, 255, 0.7) none repeat scroll 0% 0%;
      //Either
      right: 0;
      bottom: 0;
@@ -102,7 +102,7 @@ padding-top: 20px;
      }
 
     h1{
-      color: #fff;
+      color: #000;
       font-size: 1rem;
       font-weight: 400;
       margin: 0px 0px -25px 0px;
@@ -114,7 +114,7 @@ padding-top: 20px;
         }
     }
     h2{
-      color: #fff;
+      color: #000;
       font-size: 4em;
       font-weight: 800;
      
@@ -135,7 +135,7 @@ padding-top: 20px;
     font-weight: 800;
     font-size: 1.8rem; 
     line-height: 2.6rem;
-    color: #fff;
+    color: #000;
 
       a{
       color: #9f65bc;  
@@ -189,7 +189,14 @@ padding-top: 20px;
          
       }
     }
+.filtered-content{
+     margin-top: 0px!important;
+  
+    @include breakpoint(sm) {
+     margin-top: 70px!important;
+     }
 
+}
 
 //----------  Issue divider e.g. Winter 2015
 .content-divider{
@@ -343,6 +350,10 @@ padding-top: 20px;
 
           &:hover{   background-color: hsla(280, 72%, 50%, 1);}
         }
+        a.contentType-button__home{ @include filterTag($darkergray); 
+          &:hover{   background-color: hsla(230, 14%, 0%, 1);}
+        }
+
         a.contentType-button__opinion{ @include filterTag($opinion-colour); 
           &:hover{   background-color: hsla(189, 100%, 67%, 1);}
         }
@@ -359,6 +370,10 @@ padding-top: 20px;
         }
       }
   }
+
+/* */
+
+
 
 ul.social-icons li a{
   

@@ -1,7 +1,7 @@
 
 .header-leadimage{
 		background-image: none;
-		height: 600px;
+		height: 500px;
 		@include breakpoint(md){
 		@include fullwidthImage ('../images/feature-images/feature_lemn-main.jpg');
 		background-position: 0px 90%!important;
@@ -101,7 +101,7 @@
 		@include opinionImage-sm ('../images/opinion-images/opinion_tanja-muller-sm.png');
 }
 .opinion-tanja-muller_lg{
-		@include opinionImage-lg ('../images/opinion-images/opinion_tanja-muller-sm.png');
+		@include opinionImage-lg ('../images/opinion-images/opinion_tanja-muller-lg.jpg');
 }
 
 
@@ -114,7 +114,7 @@
 		@include opinionImage-sm ('../images/opinion-images/opinion_kevin-anderson-sm.png');
 }
 .opinion-kevin-anderson_lg{
-		@include opinionImage-lg ('../images/opinion-images/opinion_kevin-anderson-sm.png');
+		@include opinionImage-lg ('../images/opinion-images/opinion_kevin-anderson-lg.jpg');
 }
 
 
@@ -125,7 +125,7 @@
 		@include opinionImage-sm ('../images/opinion-images/opinion_clarissa-giebel-sm.png');
 }
 .opinion-clarissa-giebel_lg{
-		@include opinionImage-lg ('../images/opinion-images/opinion_clarissa-giebel-sm.png');
+		@include opinionImage-lg ('../images/opinion-images/opinion_clarissa-giebel-lg.jpg');
 }
 
 
@@ -138,10 +138,10 @@
 // --------------- nancy-rothwell -------------- // 
 
 .nancy-rothwell-sm {
-		@include opinionImage-sm ('../images/opinion-images/nancy-rothwell.png');
+		@include opinionImage-sm ('../images/opinion-images/nancy-rothwell-sm.png');
 }
 .nancy-rothwell_lg{
-		@include forewordImage-lg ('../images/opinion-images/nancy-rothwell.png');
+		@include forewordImage-lg ('../images/opinion-images/nancy-rothwell-lg.jpg');
 }
 
 

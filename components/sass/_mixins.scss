@@ -171,16 +171,14 @@
       text-align: center;
       line-height: 98%;
       font-weight: 800;
-      display: inline-flex;
       padding: 0;
         @include breakpoint(sm){  
         color: $primary-text-colour!important;
-        width: 200px;
+        width: 100%;
         margin: 0px auto; 
         text-align: center;
         line-height: 160%;
         font-weight: 800;
-        display: inline;
         }
      }
 
@@ -189,14 +187,18 @@
         padding: 10px;
         background-color: #fff;
         line-height: 180%;
-        display: inline;padding: 0.8rem 1.2rem 0rem 1.2rem;
+
+        padding: 0.8rem 1.2rem 0rem 1.2rem;
         box-decoration-break: clone;
+          
           @include breakpoint(sm){  
           padding: 10px;
           background-color: #fff;
           line-height: 150%;
-          font-size: 4.2rem;display: inline;padding: 0.8rem 1.2rem ;
-          box-decoration-break: clone;
+          font-size: 3.8rem;display: inline;
+          padding: 0.8rem 1.2rem ;
+         /* Needs prefixing */
+         -webkit-box-decoration-break: clone;
           }
       }
 
