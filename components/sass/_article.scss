@@ -102,7 +102,7 @@ header.article-title-left{
 	    margin: 0;
 	    float: left;
 	    padding-left: 20%;
-	    padding-top: 220px;
+	    padding-top: 150px;
 	    position: inherit;
 		}
     
@@ -127,7 +127,7 @@ header.article-title-right{
 	    margin: 0;
 	    float: right;
 	    padding-right: 20%;
-	    padding-top: 220px;
+	    padding-top: 150px;
 	    position: inherit;
 		}
     
@@ -148,7 +148,7 @@ header.article-title-center{
     // padding-top: 25%;
 	    @include breakpoint(md) {
 	    width: 50%;
-	    padding-top: 320px;
+	    padding-top: 250px;
 	    position: inherit;
 		}
     
@@ -373,27 +373,29 @@ ul#social-icons--article-top li a{
 	display: table;
 	padding-top: 20px;
 	li{
-		// float: nonel;
+		// float: none;
 	}
  @include breakpoint(md) {
     width: 50%;
  	margin-right: 20px;
  	float: right;
  	}
- 	li{
- 		float: right;
-
- 	}
+ 	li{float: right;}
      
 }
 
  
 
 
-a.contentType-button__home{ @include filterTag($darkergray); 
-  &:hover{   background-color: hsla(230, 14%, 0%, 1);}
+a.contentType-button__home{ 
+  @include filterTag($darkergray); 
   float: right;
-  }
+  &:hover{  
+  background-color: hsla(230, 14%, 0%, 1);
+ 	}
+  &::before{
+  content: "<\00a0";
+  }}
 
 
 
@@ -439,6 +441,9 @@ a.contentType-button__home{ @include filterTag($darkergray);
 	  margin: -17px 8px 0px 0px;
 	  }
 	}  
+	a{
+	color: $purple;	
+	}
 }
 
 
@@ -495,6 +500,7 @@ a.contentType-button__home{ @include filterTag($darkergray);
 	text-align: center;
 	margin: 0 auto;
 	width: 70%;
+	background-color: #fff;
 	padding: 60px 0px 60px 0px;
 	visibility: hidden;
 	    @include breakpoint(md) {

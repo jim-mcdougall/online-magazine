@@ -3,7 +3,7 @@
 		background-image: none;
 		height: 500px;
 		@include breakpoint(md){
-		@include fullwidthImage ('../images/feature-images/feature_lemn-main.jpg');
+		@include fullwidthImage ('../images/feature-images/feature_jodrell-main.jpg');
 		background-position: 0px 90%!important;
 	}
 }
@@ -12,7 +12,7 @@
 .header-leadimage-mobile{
 		height: 400px;
  		background-size: cover !important;
-		@include fullwidthImage ('../images/feature-images/feature_lemn-main.jpg');
+		@include fullwidthImage ('../images/feature-images/feature_jodrell-main.jpg');
 		display: block;
 			@include breakpoint(md){
 			display: none;
@@ -39,7 +39,7 @@
 // --------------- An adventure through campus -------------- // 
 
 .feature-campus-adventure_sm{
-		@include backImage ('../images/feature-images/feature_kids-on-campus.jpg');
+		@include backImage ('../images/feature-images/feature_kids-on-campus-sm.jpg');
 }
 .feature-campus-adventure_lg{
 		@include fullwidthImage ('../images/feature-images/feature_kids-on-campus_lg.jpg');
@@ -92,6 +92,118 @@
 
 
 
+
+// ---------------------- Issue two ---------------------- // 
+// ------------------------------------------------------- // 
+
+
+
+// --------------- HCRI Humanitarian Crisis -------------- // 
+
+.feature_hcri-sm {
+		@include backImage ('../images/feature-images/feature_hcri-sm.jpg');
+}
+.feature_hcri-lg{
+		@include fullwidthImage ('../images/feature-images/feature_hcri-lg.jpg');
+}
+
+
+// --------------- Jodrell-------------- // 
+
+.feature_jodrell-sm {
+		@include backImage ('../images/feature-images/feature_jodrell-sm.jpg');
+}
+.feature_jodrell-lg{
+		@include fullwidthImage ('../images/feature-images/feature_jodrell-lg.jpg');
+}
+
+
+
+// --------------- Campus Masterplan -------------- // 
+
+.feature_masterplan-sm {
+		@include backImage ('../images/feature-images/feature_masterplan-sm.jpg');
+}
+.feature_masterplan-lg{
+		@include fullwidthImage ('../images/feature-images/feature_masterplan-lg.jpg');
+}
+
+
+
+
+// --------------- Qstep -------------- // 
+
+.feature_qstep-sm {
+		@include backImage ('../images/feature-images/feature_qstep-sm.jpg');
+}
+.feature_qstep-lg{
+		@include fullwidthImage ('../images/feature-images/feature_qstep-lg.jpg');
+}
+
+
+
+
+// --------------- Music in communities -------------- // 
+
+.feature_halleoojamaflipaphone-sm {
+		@include backImage ('../images/feature-images/feature_halleoojamaflipaphone-sm.jpg');
+}
+.feature_halleoojamaflipaphone-lg{
+		@include fullwidthImage ('../images/feature-images/feature_halleoojamaflipaphone-lg.jpg');
+}
+
+
+
+
+// --------------- Student of the Year soty -------------- // 
+
+.feature_soty-sm {
+		@include backImage ('../images/feature-images/feature_soty-sm.jpg');
+}
+.feature_soty-lg{
+		@include fullwidthImage ('../images/feature-images/feature_soty-lg.jpg');
+}
+
+
+// --------------- Lemur frog -------------- // 
+
+.feature_lemurfrog-sm {
+		@include backImage ('../images/feature-images/feature_lemurfrog-sm.jpg');
+}
+.feature_lemurfrog-lg{
+		@include fullwidthImage ('../images/feature-images/feature_lemurfrog-lg.jpg');
+}
+
+
+// --------------- Industrial Biotech -------------- // 
+
+.feature_industrialbiotech-sm {
+		@include backImage ('../images/feature-images/feature_industrialbiotech-sm.jpg');
+}
+.feature_industrialbiotech-lg{
+		@include fullwidthImage ('../images/feature-images/feature_industiralbiotech-lg.jpg');
+}
+
+
+// --------------- Jom O'neill - powerhouse -------------- // 
+
+.feature_powerhouse-sm {
+		@include backImage ('../images/feature-images/feature_powerhouse-sm.jpg');
+}
+.feature_powerhouse-lg{
+		@include fullwidthImage ('../images/feature-images/feature_powerhouse-lg.jpg');
+}
+
+
+
+
+
+
+
+
+
+
+
 // --------------- OPINION -------------- // 
 
 
@@ -104,10 +216,6 @@
 		@include opinionImage-lg ('../images/opinion-images/opinion_tanja-muller-lg.jpg');
 }
 
-
-
-
-
 // --------------- kevin-anderson -------------- // 
 
 .opinion-kevin-anderson-sm {
@@ -116,8 +224,6 @@
 .opinion-kevin-anderson_lg{
 		@include opinionImage-lg ('../images/opinion-images/opinion_kevin-anderson-lg.jpg');
 }
-
-
 
 // --------------- Clarissa Giebel -------------- // 
 
@@ -132,6 +238,33 @@
 
 
 
+// --------------- rathaven-gunaratnarajah -------------- // 
+
+.opinion-rathaven-gunaratnarajah-sm {
+		@include opinionImage-sm ('../images/opinion-images/opinion_rathaven-gunaratnarajah-sm.jpg');
+}
+.opinion-rathaven-gunaratnarajah_lg{
+		@include opinionImage-lg ('../images/opinion-images/opinion_rathaven-gunaratnarajah-lg.jpg');
+}
+
+
+// --------------- Chris Martin -------------- // 
+
+.opinion-chris-martin-sm {
+		@include opinionImage-sm ('../images/opinion-images/opinion_chris-martin-sm.jpg');
+}
+.opinion-chris-martin_lg{
+		@include opinionImage-lg ('../images/opinion-images/opinion_chris-martin-lg.jpg');
+}
+
+// --------------- Frances Livens-------------- // 
+
+.opinion-frances-livens-sm {
+		@include opinionImage-sm ('../images/opinion-images/opinion_frances-livens-sm.jpg');
+}
+.opinion-frances-livens_lg{
+		@include opinionImage-lg ('../images/opinion-images/opinion_frances-livens-lg.jpg');
+}
 
 
 
@@ -141,7 +274,15 @@
 		@include opinionImage-sm ('../images/opinion-images/nancy-rothwell-sm.png');
 }
 .nancy-rothwell_lg{
-		@include forewordImage-lg ('../images/opinion-images/nancy-rothwell-lg.jpg');
+		@include opinionImage-lg ('../images/opinion-images/nancy-rothwell-lg.jpg');
+}
+
+
+.nancy-rothwell-v2-sm {
+		@include opinionImage-sm ('../images/opinion-images/nancy-rothwell-v2-sm.png');
+}
+.nancy-rothwell-v2_lg{
+		@include opinionImage-lg ('../images/opinion-images/nancy-rothwell-v2-lg.jpg');
 }
 
 
@@ -164,6 +305,19 @@
 .feature_mother-of-the-sea_lg{
 		@include fullwidthImage ('../images/heritage-images/mother-of-the-sea.jpg');
 }
+
+
+
+// --------------- Beatrice Shilling -------------- // 
+
+.feature_tilly-sm {
+		@include backImage ('../images/heritage-images/tilly.jpg');
+}
+.feature_tilly-lg{
+		@include fullwidthImage ('../images/heritage-images/tilly-full.jpg');
+}
+
+
 
 
 

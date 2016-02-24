@@ -89,7 +89,7 @@ padding-top: 20px;
      @include breakpoint(md) {
      width: 44%;
      position: absolute;
-     background: rgba(255, 255, 255, 0.7) none repeat scroll 0% 0%;
+     background: rgba(255, 255, 255, 0.9) none repeat scroll 0% 0%;
      //Either
      right: 0;
      bottom: 0;
@@ -196,6 +196,11 @@ padding-top: 20px;
      margin-top: 70px!important;
      }
 
+}
+
+
+#wrap-home .container .filter .category-filters p{
+  margin-top: 0px!important;
 }
 
 //----------  Issue divider e.g. Winter 2015

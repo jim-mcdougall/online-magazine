@@ -164,7 +164,7 @@
 
 @mixin title-h1h2{
 
-      h1{
+    h1{
       color: $primary-text-colour!important;
       width: 100%;
       margin: 0px auto; 
@@ -180,17 +180,13 @@
         line-height: 160%;
         font-weight: 800;
         }
-     }
-
-     span{
+      span{
         font-size: 2rem;margin: 0 auto;
         padding: 10px;
         background-color: #fff;
         line-height: 180%;
-
         padding: 0.8rem 1.2rem 0rem 1.2rem;
         box-decoration-break: clone;
-          
           @include breakpoint(sm){  
           padding: 10px;
           background-color: #fff;
@@ -200,17 +196,34 @@
          /* Needs prefixing */
          -webkit-box-decoration-break: clone;
           }
-      }
+         }
+        }
 
      h2{
       color: #fff;
-      width: 400px;
-      padding: 25px 10px 10px 10px;
+      width: 100%;
+      padding: 0px;
       color: $primary-text-colour!important;
       line-height: 130%;
-      font-size: 1rem;
       text-align: center;
-     }
+        span{
+        font-size: 1.4rem;margin: 0 auto;
+        padding: 10px;line-height: 80%;
+        background-color: #fff;
+        padding: 0.8rem 0rem 0rem 0rem;
+        box-decoration-break: clone;
+          @include breakpoint(sm){  
+          padding: 10px;
+          background-color: #fff;
+          
+          font-size: 2rem;display: inline;
+          padding: 0.8rem 1.2rem 0.9rem 1.2rem ;
+         /* Needs prefixing */
+         -webkit-box-decoration-break: clone;
+          }
+        }
+      }
+    
 }
 
 
